@@ -1,0 +1,25 @@
+/* Root App Variables */
+:root {
+  --white: #ffffff;
+  --purple__primary: #2A2A7F;
+}
+
+/* Root App Styling */
+:root {
+  font-family: Helvetica Neue, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  background-color: var(--purple__primary);
+  color: var(--white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  min-height: 100vh;
+}

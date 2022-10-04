@@ -38,6 +38,7 @@ function Footer(props) {
         <a
           href={props.linkedIn}
           title="LinkedIn"
+          target="_blank"
         >
           <i className="icon__socials fa-brands fa-linkedin"></i>
           <span className="icon__label">linkedin</span>
@@ -46,6 +47,7 @@ function Footer(props) {
         <a
           href={props.github}
           title="GitHub"
+          target="_blank"
         >
           <i className="icon__socials fa-brands fa-square-github"></i>
           <span className="icon__label">github</span>
@@ -54,15 +56,13 @@ function Footer(props) {
         <a
           href={props.twitter}
           title="Twitter"
+          target="_blank"
         >
           <i className="icon__socials fa-brands fa-square-twitter"></i>
           <span className="icon__label">twitter</span>
         </a>
 
-        <a
-          href="#"
-          title="Location"
-        >
+        <a title="Location">
           <i className="icon__socials fa-solid fa-location-arrow"></i>
           <span className="icon__label">location</span>
         </a>

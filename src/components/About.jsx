@@ -13,6 +13,7 @@ function About(props) {
           I specialize in developing <a
             className="pageLinks hover-underline-animation"
             href={props.github}
+            target="_blank"
           > modern and responsive web products </a>, from websites to
           full stack web applications. My interest in sofware engineering stems from my
           background in policy analysis, building Tableau dashboards to uncover clean
@@ -25,6 +26,7 @@ function About(props) {
           <a
             className="pageLinks hover-underline-animation"
             href={props.companyLink}
+            target="_blank"
           >
             {props.company}
           </a>{' '}

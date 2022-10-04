@@ -2,6 +2,10 @@ import '../App.css';
 import backgroundImg from '../assets/gradient-background.svg';
 
 function Header(props) {
+  let toggleNavMobile = async () => {
+    
+  }
+
   return (
     <header
       id="header"
@@ -14,7 +18,7 @@ function Header(props) {
         <i className="header__logo Icon ph-code"></i>
         <span className="header__logoName">daniel jay-young kim</span>
       </a>
-      <i className="hamburgerToggleBtn ph-list"></i>
+      <i className="hamburgerToggleBtn ph-list" onClick={toggleNavMobile}></i>
       <nav className="nav">
         <ul className="navList">
           <li className="navList__items">

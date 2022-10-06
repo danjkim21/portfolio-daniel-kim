@@ -75,6 +75,12 @@ html {
   position: relative;
   color: var(--beige__primary);
 }
+.header__logoName.hover-underline-animation {
+  color: var(--white);
+}
+.header__logoName.hover-underline-animation:hover {
+  color: var(--beige__primary);
+}
 .hover-underline-animation:after {
   content: '';
   position: absolute;
@@ -87,9 +93,11 @@ html {
   transform-origin: bottom left;
   transition: transform 0.25s ease-in-out;
 }
-.textBold.hover-underline-animation:after,
 .contact__email.hover-underline-animation:after {
   height: 4px;
+}
+.navList__items > .hover-underline-animation:after {
+  background-color: var(--purple-beige_gradient1);
 }
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
@@ -158,6 +166,7 @@ html {
   font-weight: 700;
 }
 .textBold {
+  color: var(--beige__primary);
   font-weight: 900;
 }
 .icon__socials {

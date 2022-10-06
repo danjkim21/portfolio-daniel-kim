@@ -59,12 +59,12 @@ function Footer(props) {
           target="_blank"
         >
           <i className="icon__socials fa-brands fa-square-twitter"></i>
-          <span className="icon__label">twitter</span>
+          <span className="icon__label ">twitter</span>
         </a>
 
         <a title="Location">
           <i className="icon__socials fa-solid fa-location-arrow"></i>
-          <span className="icon__label">{props.location}</span>
+          <span className="icon__label ">{props.location}</span>
         </a>
       </section>
     </footer>

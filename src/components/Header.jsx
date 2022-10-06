@@ -22,7 +22,9 @@ function Header(props) {
         href="#header"
       >
         <i className="header__logo Icon ph-code"></i>
-        <span className="header__logoName">daniel jay-young kim</span>
+        <span className="header__logoName hover-underline-animation">
+          daniel jay-young kim
+        </span>
       </a>
       <i
         className="hamburgerToggleBtn ph-list"
@@ -34,13 +36,28 @@ function Header(props) {
       >
         <ul className="navList">
           <li className="navList__items">
-            <a href="#about">about</a>
+            <a
+              href="#about"
+              className="hover-underline-animation"
+            >
+              about
+            </a>
           </li>
           <li className="navList__items">
-            <a href="#projects">projects</a>
+            <a
+              href="#projects"
+              className="hover-underline-animation"
+            >
+              projects
+            </a>
           </li>
           <li className="navList__items">
-            <a href="#footer">contact</a>
+            <a
+              href="#footer"
+              className="hover-underline-animation"
+            >
+              contact
+            </a>
           </li>
         </ul>
       </nav>

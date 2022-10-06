@@ -7,8 +7,8 @@ function Hero(props) {
       className="section__hero"
     >
       <h1 className="hero__primaryText">
-        hey, i'm <span className="textBold hover-underline-animation">daniel kim.</span>{' '}
-        i'm a software engineer that builds creative digital solutions. 
+        hey, i'm <span className="textBold">daniel kim.</span>{' '}
+        i'm a software engineer building creative digital solutions. 
       </h1>
       <p className="hero__positionDesc">
         <span>{props.position}</span> @ {props.company}

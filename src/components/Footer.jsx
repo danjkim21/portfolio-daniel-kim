@@ -64,7 +64,7 @@ function Footer(props) {
 
         <a title="Location">
           <i className="icon__socials fa-solid fa-location-arrow"></i>
-          <span className="icon__label">location</span>
+          <span className="icon__label">{props.location}</span>
         </a>
       </section>
     </footer>

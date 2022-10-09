@@ -44,6 +44,9 @@ html {
 .section__footer {
   padding: 6.25rem 0;
 }
+.section__projects.details {
+  padding: 6.25rem 0;
+}
 .section__hero,
 .section__about,
 .section__projects,
@@ -259,7 +262,8 @@ html {
 .projectDesc {
   width: 70%;
 }
-.container__btn {
+.container__btn,
+.container__btn.details {
   margin-top: auto;
   display: flex;
   justify-content: flex-start;
@@ -299,6 +303,30 @@ html {
   transform: scale(1.01);
 }
 
+/* Project Details Pages */
+.projectSubHeader {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.35rem;
+}
+.section__projects.details .project__display--right .projectSubHeader {
+  margin: 1rem 0;
+}
+.section__projects.details .projectDesc {
+  margin-bottom: 2rem;
+}
+.projectFeatures {
+  width: 70%;
+  padding-left: 1rem;
+}
+.section__projects.details .container__skills {
+  justify-content: flex-end;
+}
+.container__btn.details .btn__project,
+.container__btn.details .btn__link {
+  color: var(--white);
+  text-decoration: none;
+}
 /************* Footer Component Styling *************/
 .footer__title {
   font-size: 2rem;
@@ -405,6 +433,10 @@ html {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  /*  */
+  .projectFeatures {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 550px) {
@@ -413,6 +445,9 @@ html {
   .section__about,
   .container__project,
   .section__footer {
+    padding: 4.25rem 0;
+  }
+  .section__projects.details {
     padding: 4.25rem 0;
   }
   .section__hero,

@@ -1,11 +1,13 @@
 import '../App.css';
 import Skill from './Skill';
+import ProjectDetail from './ProjectDetail';
+import { Link } from 'react-router-dom';
 
 function Project(props) {
-  // console.log(props)
+
   return (
     <section className="container__project">
-      {/* <a href="#"> */}
+      <Link></Link>
       <section className="project">
         <section className="project__display--left">
           <h2 className="projectName">{props.projectName}</h2>
@@ -14,20 +16,23 @@ function Project(props) {
             <Skill tools={props.projectTools} />
           </section>
           <section className="container__btn">
-            <a
-              className="btn__link"
-              href={props.githubLink}
-              target="_blank"
-            >
-              <i className="btn__project btn__project--primary fa-brands fa-github"></i>
-            </a>
-            <a
+            {/* <a
+                className="btn__link"
+                href={props.githubLink}
+                target="_blank"
+              >
+                <i className="btn__project btn__project--primary fa-brands fa-github"></i>
+              </a> */}
+            <Link className="btn__link" to={`project/${props.projectName}`}>
+              <i className="btn__project btn__project--secondary ph-arrow-right"></i>
+            </Link>
+            {/* <a
               className="btn__link"
               href={props.liveLink}
               target="_blank"
             >
               <i className="btn__project btn__project--secondary ph-arrow-right"></i>
-            </a>
+            </a> */}
           </section>
         </section>
         <section className="project__display--right">
@@ -44,7 +49,6 @@ function Project(props) {
           </a>
         </section>
       </section>
-      {/* </a> */}
     </section>
   );
 }

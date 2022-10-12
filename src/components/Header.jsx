@@ -1,24 +1,20 @@
 import '../App.css';
-import { useRef } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import backgroundImg from '../assets/gradient-background.svg';
 
 function Header(props) {
   const { pathname } = useLocation();
+  const [isActive, setIsActive] = useState(false);
 
-  const navEl = useRef();
-  const headerEl = useRef();
-  let toggleNavMobile = async () => {
-    // console.log(navEl.current, headerEl.current);
-    navEl.current.classList.toggle('active');
-    headerEl.current.classList.toggle('active');
+  let toggleNavMobile = () => {
+    setIsActive((isActiveDefault) => !isActive);
   };
 
   return (
     <header
       id="header"
-      className="section__header"
-      ref={headerEl}
+      className={isActive ? 'section__header active' : 'section__header'}
     >
       <Link
         className="container__logo"
@@ -36,10 +32,7 @@ function Header(props) {
             className="hamburgerToggleBtn ph-list"
             onClick={toggleNavMobile}
           ></i>
-          <nav
-            className="nav"
-            ref={navEl}
-          >
+          <nav className={isActive ? 'nav active' : 'nav'}>
             <ul className="navList">
               <li className="navList__items">
                 <a

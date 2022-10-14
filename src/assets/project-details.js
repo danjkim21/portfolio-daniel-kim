@@ -43,7 +43,7 @@ const projectData = [
     projectDescExtra:
       'This full stack CRUD web application allows users to explore popular books, and save them to their reading playlist. Users can use a number of features to read book descriptions, mark books as completed, and more. The goal of this project was to develop a novel and minimal user experience for tracking and finding new books. This project highlights my ability to build the client and server software of a modern web application, and implement CRUD operations.',
     githubLink: 'https://github.com/danjkim21/bookly-app',
-    liveLink: 'https://bookly-crud-app.herokuapp.com/',
+    liveLink: 'https://bookly.cyclic.app/',
     projectImg: booklyAppImg,
     projectGif: '',
     projectFeatures: [

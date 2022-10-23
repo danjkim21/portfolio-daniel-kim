@@ -8,8 +8,8 @@ function ProjectDetail({ projectData }) {
 
   const outpost = projectData.filter((project) => project.projectName === 'Outpost')[0];
   const bookly = projectData.filter((project) => project.projectName === 'Bookly')[0];
-  const calmSpace = projectData.filter(
-    (project) => project.projectName === 'Calm. Space'
+  const arDB = projectData.filter(
+    (project) => project.projectName === 'arDB'
   )[0];
   const cloneify = projectData.filter(
     (project) => project.projectName === 'Clone-ify: iPadOS'
@@ -17,9 +17,9 @@ function ProjectDetail({ projectData }) {
 
   return (
     <>
-      {pathname === '/project/Outpost' && (
+      {pathname === `/project/${outpost.projectName}` && (
         <>
-          <section className="section__projects">
+          <section className="section__projects top">
             <h2 className="projectName">{outpost.projectName}</h2>
           </section>
 
@@ -70,9 +70,9 @@ function ProjectDetail({ projectData }) {
           </section>
         </>
       )}
-      {pathname === '/project/Bookly' && (
+      {pathname === `/project/${bookly.projectName}` && (
         <>
-          <section className="section__projects">
+          <section className="section__projects top">
             <h1>{bookly.projectName}</h1>
           </section>
           <section className="section__projects details">
@@ -122,31 +122,31 @@ function ProjectDetail({ projectData }) {
           </section>
         </>
       )}
-      {pathname === '/project/Calm. Space' && (
+      {pathname === `/project/${arDB.projectName}` && (
         <>
-          <section className="section__projects">
-            <h1>{calmSpace.projectName}</h1>
+          <section className="section__projects top">
+            <h1>{arDB.projectName}</h1>
           </section>
           <section className="section__projects details">
             <section className="project">
               <section className="project__display--left">
                 <h3 className="projectSubHeader">About</h3>
-                <p className="projectDesc">{calmSpace.projectDescExtra}</p>
+                <p className="projectDesc">{arDB.projectDescExtra}</p>
                 <h3 className="projectSubHeader">Notable Features</h3>
                 <ul className="projectFeatures">
-                  <Feature features={calmSpace.projectFeatures} />
+                  <Feature features={arDB.projectFeatures} />
                 </ul>
                 <section className="container__btn details">
                   <a
                     className="btn__link"
-                    href={calmSpace.githubLink}
+                    href={arDB.githubLink}
                     target="_blank"
                   >
                     <i className="btn__project btn__project--primary fa-brands fa-github"></i>
                   </a>
                   <a
                     className="btn__link"
-                    href={calmSpace.liveLink}
+                    href={arDB.liveLink}
                     target="_blank"
                   >
                     <i className="btn__project btn__project--secondary ph-arrow-right"></i>
@@ -155,28 +155,28 @@ function ProjectDetail({ projectData }) {
               </section>
               <section className="project__display--right">
                 <a
-                  href={calmSpace.liveLink}
+                  href={arDB.liveLink}
                   target="_blank"
                 >
                   <img
                     className="projectImg"
-                    src={calmSpace.projectImg}
+                    src={arDB.projectImg}
                     alt="project image"
                     loading="lazy"
                   />
                 </a>
                 <h3 className="projectSubHeader">Technologies Used</h3>
                 <section className="container__skills">
-                  <Skill tools={calmSpace.projectToolsExtra} />
+                  <Skill tools={arDB.projectToolsExtra} />
                 </section>
               </section>
             </section>
           </section>
         </>
       )}
-      {pathname === '/project/Clone-ify: iPadOS' && (
+      {pathname === `/project/${cloneify.projectName}` && (
         <>
-          <section className="section__projects">
+          <section className="section__projects top">
             <h1>{cloneify.projectName}</h1>
           </section>
           <section className="section__projects details">

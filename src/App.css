@@ -47,6 +47,9 @@ html {
 .section__projects.details {
   padding: 6.25rem 0;
 }
+.section__projects.top {
+  margin-top: 2.25rem;
+}
 .section__hero,
 .section__about,
 .section__projects,

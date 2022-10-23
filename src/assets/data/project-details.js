@@ -1,7 +1,7 @@
-import outpostAppImg from '../assets/outpost-img.jpeg';
-import booklyAppImg from '../assets/bookly-img.jpeg';
-import calmSpaceAppImg from '../assets/nasa-app-img.jpeg';
-import cloneifyAppImg from '../assets/cloneify-img.jpeg';
+import outpostAppImg from '../../assets/outpost-img.jpeg';
+import booklyAppImg from '../../assets/bookly-img.jpeg';
+import ardbAppImg from '../../assets/arDB-screenshot.jpeg';
+import cloneifyAppImg from '../../assets/cloneify-img.jpeg';
 
 const projectData = [
   {
@@ -66,28 +66,29 @@ const projectData = [
   },
   {
     id: 3,
-    projectName: 'Calm. Space',
+    projectName: 'arDB',
     projectDesc:
-      "A web app displaying pictures generated from NASA's astronomy API. Communicated through a simple yet elegant design, the project allows users to explore our universe through stunning photography, and informative descriptions.",
+      'A full stack web application that allows users to explore or call to a RESTful API containing scrapped data on advanced nuclear reactor technical specifications and information related to reactor dynamics, and electricity production.',
     projectDescExtra:
-      "This project generates a new background image from NASA's popular Astronomy Picture of the Day (APOD) API, and provides a brief description of the image. The goal was to make a simple yet elegent web applicationthat provides a smooth user interface and maybe even calming experience. This project was designed to showcase more of my front end development skills. It displays my ability to fetch and parse through a complex API and return a clean and elegant UX/UI.",
-    githubLink: 'https://github.com/danjkim21/space-image-generator',
-    liveLink: 'https://danjkim21.github.io/space-image-generator/',
-    projectImg: calmSpaceAppImg,
+      'A web app that allows users to explore or call to a RESTful API containing scrapped data on advanced nuclear reactor technical specifications and information related to reactor dynamics, and electricity production. This project highlights my ability to build REST APIs and integrate them into React. It demonstrates my understanding of how the client, server, and database all interact in a single-page application (SPA).',
+    githubLink: 'https://github.com/danjkim21/adv-nuclear-reactor-api-v2',
+    liveLink: 'https://ardb.vercel.app/',
+    projectImg: ardbAppImg,
     projectGif: '',
     projectFeatures: [
-      'Unique animations and transitions using css styling techniques such as :before, :after, and @keyframes',
-      'Integration of NASA APOD API to generate high quality space images',
+      'Explore technical data via front-end web app or RESTful API',
+      'public data scraped using puppeteer.js and cheerio.js',
     ],
-    projectTools: ['HTML', 'CSS', 'JavaScript'],
+    projectTools: ['React', 'Express', 'Node'],
     projectToolsExtra: [
-      'HTML',
-      'CSS',
+      'React',
+      'Express',
       'JavaScript',
-      'Flexbox',
-      'NASA APOD API',
-      '@media',
-      '@keyframes',
+      'Node',
+      'Cheerio',
+      'Puppeteer',
+      'Vite',
+      'SPA',
     ],
   },
   {

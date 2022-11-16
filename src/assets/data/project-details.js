@@ -12,7 +12,7 @@ const projectData = [
     projectDescExtra:
       'A full stack web application that allows users to log in to their profile and find their planned trips. Users can create or edit trip plans, add destinations to each trip, plan activities, and save important notes, tickets, and accommodation information. This project highlights my ability to build a full stack application using MVC architecture. It demonstrates my understanding of how the client, server, and database all interact.',
     githubLink: 'https://github.com/danjkim21/outpost-app',
-    liveLink: 'https://outpost-trips.herokuapp.com/',
+    liveLink: 'https://outpost.cyclic.app/',
     projectImg: outpostAppImg,
     projectGif: '',
     projectFeatures: [

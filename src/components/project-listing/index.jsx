@@ -1,4 +1,4 @@
-import Skill from './Skill';
+import Skill from '../skill-pill';
 import { Link } from 'react-router-dom';
 // import ProjectDetail from './ProjectDetail';
 

@@ -1,4 +1,4 @@
-import backgroundImage from '../assets/images/gradient-background copy.svg';
+import backgroundImage from '../../assets/images/gradient-background copy.svg';
 
 function backgroundImg() {
   return (

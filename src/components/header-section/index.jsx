@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import backgroundImg from '../assets/images/gradient-background.svg';
+import backgroundImg from '../../assets/images/gradient-background.svg';
 
 function Header(props) {
   const { pathname } = useLocation();

@@ -1,5 +1,5 @@
-import headshot from '../assets/images/fullheadshot.jpeg';
-import Skill from './Skill';
+import headshot from '../../assets/images/fullheadshot.jpeg';
+import Skill from '../skill-pill';
 
 function About(props) {
   return (

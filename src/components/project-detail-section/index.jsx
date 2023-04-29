@@ -1,5 +1,5 @@
-import Skill from './Skill';
-import Feature from './Feature';
+import Skill from '../skill-pill';
+import Feature from '../project-features';
 import { useLocation } from 'react-router-dom';
 
 function ProjectDetail({ projectData }) {

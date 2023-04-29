@@ -1,4 +1,4 @@
-import Project from './Project';
+import Project from '../project-listing';
 
 function Projects({ projectData }) {
   const outpost = projectData.filter(

@@ -9,13 +9,13 @@ import projectData from './assets/data/project-details';
 import myData from './assets/data/my-details';
 
 // Components
-import BackgroundImg from './components/BackgroundImg';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
-import ProjectDetail from './components/ProjectDetail';
+import BackgroundImg from './components/background-img';
+import Header from './components/header-section';
+import Hero from './components/hero-section';
+import About from './components/about-section';
+import Projects from './components/projects-section';
+import Footer from './components/footer-section';
+import ProjectDetail from './components/project-detail-section';
 
 function App() {
   return (

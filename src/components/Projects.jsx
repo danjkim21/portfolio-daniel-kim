@@ -1,10 +1,12 @@
-import '../App.css';
 import Project from './Project';
 
 function Projects({ projectData }) {
-  // console.log(projectData);
-  const outpost = projectData.filter((project) => project.projectName === 'Outpost')[0];
-  const bookly = projectData.filter((project) => project.projectName === 'Bookly')[0];
+  const outpost = projectData.filter(
+    (project) => project.projectName === 'Outpost'
+  )[0];
+  const bookly = projectData.filter(
+    (project) => project.projectName === 'Bookly'
+  )[0];
   const arDB = projectData.filter(
     (project) => project.projectName === 'arDB'
   )[0];
@@ -13,10 +15,7 @@ function Projects({ projectData }) {
   )[0];
 
   return (
-    <section
-      id="projects"
-      className="section__projects"
-    >
+    <section id='projects' className='section__projects'>
       <Project {...outpost} />
       <Project {...bookly} />
       <Project {...arDB} />

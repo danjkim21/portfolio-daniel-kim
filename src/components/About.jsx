@@ -1,4 +1,3 @@
-import '../App.css';
 import headshot from '../assets/images/fullheadshot.jpeg';
 import Skill from './Skill';
 

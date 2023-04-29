@@ -1,6 +1,6 @@
 // Styling
-import './App.css';
-import './normalize.css';
+import './styles/app.css';
+import './styles/normalize.css';
 
 import projectData from './assets/data/project-details';
 import myData from './assets/data/my-details';
@@ -19,14 +19,14 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className='App'>
         <BackgroundImg />
         <Header />
 
         <Routes>
           {/* Landing page sections */}
           <Route
-            path="*"
+            path='*'
             element={
               <>
                 <Hero {...myData} />
@@ -37,7 +37,7 @@ function App() {
           />
           {/* Project Detail page */}
           <Route
-            path="/project/:projectName"
+            path='/project/:projectName'
             element={
               <>
                 <ProjectDetail projectData={projectData} />

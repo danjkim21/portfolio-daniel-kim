@@ -2,7 +2,7 @@
 import './styles/app.css';
 import './styles/normalize.css';
 
-import ProjectRoutes from './router/ProjectRoutes';
+import ProjectRoutes from './router';
 
 function App() {
   return (

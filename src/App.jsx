@@ -2,6 +2,9 @@
 import './styles/app.css';
 import './styles/normalize.css';
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ScrollToTop from './utils/ScrollToTop';
+
 import projectData from './assets/data/project-details';
 import myData from './assets/data/my-details';
 
@@ -14,12 +17,11 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import ProjectDetail from './components/ProjectDetail';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 function App() {
   return (
     <Router>
       <div className='App'>
+        <ScrollToTop />
         <BackgroundImg />
         <Header />
 

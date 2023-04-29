@@ -1,7 +1,7 @@
-import outpostAppImg from '../../assets/outpost-img.jpeg';
-import booklyAppImg from '../../assets/bookly-img.jpeg';
-import ardbAppImg from '../../assets/arDB-screenshot.jpeg';
-import cloneifyAppImg from '../../assets/cloneify-img.jpeg';
+import outpostAppImg from '../../assets/images/outpost-img.jpeg';
+import booklyAppImg from '../../assets/images/bookly-img.jpeg';
+import ardbAppImg from '../../assets/images/arDB-screenshot.jpeg';
+import cloneifyAppImg from '../../assets/images/cloneify-img.jpeg';
 
 const projectData = [
   {

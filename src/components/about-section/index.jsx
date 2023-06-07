@@ -15,11 +15,11 @@ function About(props) {
             {' '}
             modern and responsive web products{' '}
           </a>
-          , from websites to full stack web applications. My interest in sofware
-          engineering stems from my background in policy analysis, building
-          Tableau dashboards to uncover clean energy policy solutions. As it
-          turns out, creating interactive data stories has a lot in common with
-          web development!
+          , from websites to full stack web applications. My interest in
+          software engineering stems from my background in policy analysis,
+          building Tableau dashboards to uncover clean energy policy solutions.
+          As it turns out, creating interactive data stories has a lot in common
+          with web development!
         </p>
         <p className='about__text'>
           Today, my main focus is building accessible, inclusive products and

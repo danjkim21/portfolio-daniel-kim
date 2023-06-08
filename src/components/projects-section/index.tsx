@@ -1,6 +1,7 @@
 import Project from '../project-listing';
+import ProjectDetailsInterface from '../../assets/data/projectDetailsInterface';
 
-function Projects({ projectData }) {
+function Projects({ projectData }: { projectData: ProjectDetailsInterface[] }) {
   const outpost = projectData.filter(
     (project) => project.projectName === 'Outpost'
   )[0];
@@ -16,10 +17,10 @@ function Projects({ projectData }) {
 
   return (
     <section id='projects' className='section__projects'>
-      <Project {...outpost} />
-      <Project {...bookly} />
-      <Project {...arDB} />
-      <Project {...cloneify} />
+      <Project projectData={outpost} />
+      <Project projectData={bookly} />
+      <Project projectData={arDB} />
+      <Project projectData={cloneify} />
     </section>
   );
 }

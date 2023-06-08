@@ -1,9 +1,11 @@
+import ProjectDetailsInterface from './projectDetailsInterface';
+
 import outpostAppImg from '../../assets/images/outpost-img.jpeg';
 import booklyAppImg from '../../assets/images/bookly-img.jpeg';
 import ardbAppImg from '../../assets/images/arDB-screenshot.jpeg';
 import cloneifyAppImg from '../../assets/images/cloneify-img.jpeg';
 
-const projectData = [
+const projectDetails: ProjectDetailsInterface[] = [
   {
     id: 1,
     projectName: 'Outpost',
@@ -120,4 +122,4 @@ const projectData = [
   },
 ];
 
-export default projectData;
+export default projectDetails;

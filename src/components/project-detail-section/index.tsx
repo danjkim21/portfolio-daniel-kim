@@ -1,8 +1,13 @@
 import Skill from '../skill-pill';
 import Feature from '../project-features';
 import { useLocation } from 'react-router-dom';
+import ProjectDetailsInterface from '../../assets/data/projectDetailsInterface';
 
-function ProjectDetail({ projectData }) {
+function ProjectDetail({
+  projectData,
+}: {
+  projectData: ProjectDetailsInterface[];
+}) {
   const { pathname } = useLocation();
 
   const outpost = projectData.filter(

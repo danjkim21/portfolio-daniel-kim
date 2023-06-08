@@ -1,7 +1,8 @@
 import headshot from '../../assets/images/fullheadshot.jpeg';
 import Skill from '../skill-pill';
+import MyDetailsInterface from '../../assets/data/myDetailsInterface';
 
-function About(props) {
+function About({ myData }: { myData: MyDetailsInterface }) {
   return (
     <section id='about' className='section__about'>
       <section className='contentAbout__left'>
@@ -9,27 +10,27 @@ function About(props) {
           I specialize in developing{' '}
           <a
             className='pageLinks hover-underline-animation'
-            href={props.github}
+            href={myData.github}
             target='_blank'
           >
             {' '}
             modern and responsive web products{' '}
           </a>
-          , from websites to full stack web applications. My interest in sofware
-          engineering stems from my background in policy analysis, building
-          Tableau dashboards to uncover clean energy policy solutions. As it
-          turns out, creating interactive data stories has a lot in common with
-          web development!
+          , from websites to full stack web applications. My interest in
+          software engineering stems from my background in policy analysis,
+          building Tableau dashboards to uncover clean energy policy solutions.
+          As it turns out, creating interactive data stories has a lot in common
+          with web development!
         </p>
         <p className='about__text'>
           Today, my main focus is building accessible, inclusive products and
           digital experiences at{' '}
           <a
             className='pageLinks hover-underline-animation'
-            href={props.companyLink}
+            href={myData.companyLink}
             target='_blank'
           >
-            {props.company}
+            {myData.company}
           </a>{' '}
           for a variety of clients.
         </p>

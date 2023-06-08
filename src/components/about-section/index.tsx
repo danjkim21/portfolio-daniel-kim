@@ -1,7 +1,8 @@
 import headshot from '../../assets/images/fullheadshot.jpeg';
 import Skill from '../skill-pill';
+import MyDetailsInterface from '../../assets/data/myDetailsInterface';
 
-function About(props) {
+function About({ myData }) {
   return (
     <section id='about' className='section__about'>
       <section className='contentAbout__left'>
@@ -9,7 +10,7 @@ function About(props) {
           I specialize in developing{' '}
           <a
             className='pageLinks hover-underline-animation'
-            href={props.github}
+            href={myData.github}
             target='_blank'
           >
             {' '}
@@ -26,10 +27,10 @@ function About(props) {
           digital experiences at{' '}
           <a
             className='pageLinks hover-underline-animation'
-            href={props.companyLink}
+            href={myData.companyLink}
             target='_blank'
           >
-            {props.company}
+            {myData.company}
           </a>{' '}
           for a variety of clients.
         </p>

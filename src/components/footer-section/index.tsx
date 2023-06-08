@@ -1,4 +1,5 @@
-function Footer(props) {
+function Footer({ myData }) {
+  // func - adds text to clipboard using navigator API
   let copyEmailToClipBoard = async () => {
     let emailAddress = 'dan.jkim21@gmail.com';
     navigator.clipboard.writeText(emailAddress).then(() => {
@@ -27,24 +28,24 @@ function Footer(props) {
       </section>
 
       <section className='container__socials--footer'>
-        <a href={props.linkedIn} title='LinkedIn' target='_blank'>
+        <a href={myData.linkedIn} title='LinkedIn' target='_blank'>
           <i className='icon__socials fa-brands fa-linkedin'></i>
           <span className='icon__label'>linkedin</span>
         </a>
 
-        <a href={props.github} title='GitHub' target='_blank'>
+        <a href={myData.github} title='GitHub' target='_blank'>
           <i className='icon__socials fa-brands fa-square-github'></i>
           <span className='icon__label'>github</span>
         </a>
 
-        <a href={props.twitter} title='Twitter' target='_blank'>
+        <a href={myData.twitter} title='Twitter' target='_blank'>
           <i className='icon__socials fa-brands fa-square-twitter'></i>
           <span className='icon__label '>twitter</span>
         </a>
 
         <a title='Location'>
           <i className='icon__socials fa-solid fa-location-arrow'></i>
-          <span className='icon__label '>{props.location}</span>
+          <span className='icon__label '>{myData.location}</span>
         </a>
       </section>
     </footer>

@@ -1,4 +1,6 @@
-function Hero(props) {
+import MyDetailsInterface from '../../assets/data/myDetailsInterface';
+
+function Hero({ myData }) {
   return (
     <main id='hero' className='section__hero'>
       <h1 className='hero__primaryText'>
@@ -6,16 +8,16 @@ function Hero(props) {
         engineer building creative digital solutions.
       </h1>
       <p className='hero__positionDesc'>
-        <span>{props.position}</span> @ {props.company}
+        <span>{myData.position}</span> @ {myData.company}
       </p>
       <section className='container__socials--hero'>
-        <a href={props.linkedIn} title='LinkedIn' target='_blank'>
+        <a href={myData.linkedIn} title='LinkedIn' target='_blank'>
           <i className='icon__socials fa-brands fa-linkedin'></i>
         </a>
-        <a href={props.github} title='GitHub' target='_blank'>
+        <a href={myData.github} title='GitHub' target='_blank'>
           <i className='icon__socials fa-brands fa-square-github'></i>
         </a>
-        <a href={props.twitter} title='Twitter' target='_blank'>
+        <a href={myData.twitter} title='Twitter' target='_blank'>
           <i className='icon__socials fa-brands fa-square-twitter'></i>
         </a>
       </section>

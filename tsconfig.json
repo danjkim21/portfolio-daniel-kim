@@ -3,7 +3,7 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
+    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
@@ -16,8 +16,10 @@
     // "noEmit": true,
     "noImplicitAny": false,
     "noImplicitThis": false,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "typeRoots": ["./node_modules/@types", "./types", "./functions/bundle"]
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": ["node_modules", "src/**/__tests__"]
 }

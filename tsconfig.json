@@ -13,13 +13,13 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    // "noEmit": true,
+    "noEmit": true,
     "noImplicitAny": false,
     "noImplicitThis": false,
     "jsx": "react-jsx",
-    "typeRoots": ["./node_modules/@types", "./types", "./functions/bundle"]
+    "typeRoots": ["./node_modules/@types", "./src/types", "./functions/bundle"]
   },
-  "include": ["src"],
+  // "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "exclude": ["node_modules", "src/**/__tests__"]
 }

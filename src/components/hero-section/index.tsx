@@ -1,6 +1,6 @@
 import MyDetailsInterface from '../../assets/data/myDetailsInterface';
 
-function Hero({ myData }) {
+function Hero({ myData }: { myData: MyDetailsInterface }) {
   return (
     <main id='hero' className='section__hero'>
       <h1 className='hero__primaryText'>

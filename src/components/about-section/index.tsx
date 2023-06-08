@@ -2,7 +2,7 @@ import headshot from '../../assets/images/fullheadshot.jpeg';
 import Skill from '../skill-pill';
 import MyDetailsInterface from '../../assets/data/myDetailsInterface';
 
-function About({ myData }) {
+function About({ myData }: { myData: MyDetailsInterface }) {
   return (
     <section id='about' className='section__about'>
       <section className='contentAbout__left'>

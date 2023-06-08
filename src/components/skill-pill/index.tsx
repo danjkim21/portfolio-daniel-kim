@@ -1,5 +1,5 @@
-function Skill({ tools }) {
-  let skillPill: string[] = tools.map((skill: string) => {
+function Skill({ tools }: { tools: string[] }) {
+  let skillPill = tools.map((skill) => {
     return (
       <span className='pill__skill' key={Math.random() * 100}>
         {skill}

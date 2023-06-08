@@ -1,15 +1,15 @@
 import backgroundImage from '../../assets/images/gradient-background copy.svg';
 
-function backgroundImg() {
+function BackgroundImg() {
   return (
     <>
       <img
         className='image__backgroundCover'
-        src={backgroundImage as string}
+        src={backgroundImage}
         alt='Background staggered gradient shapes image'
       />
     </>
   );
 }
 
-export default backgroundImg;
+export default BackgroundImg;

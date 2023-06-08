@@ -1,4 +1,6 @@
-function Footer({ myData }) {
+import MyDetailsInterface from '../../assets/data/myDetailsInterface';
+
+function Footer({ myData }: { myData: MyDetailsInterface }) {
   // func - adds text to clipboard using navigator API
   let copyEmailToClipBoard = async () => {
     let emailAddress = 'dan.jkim21@gmail.com';

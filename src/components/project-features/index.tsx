@@ -1,5 +1,5 @@
-function Feature({ features }) {
-  let skillPill: string[] = features.map((feature: string) => {
+function Feature({ features }: { features: string[] }) {
+  let skillPill = features.map((feature) => {
     return (
       <li className='feature__item' key={Math.random() * 100}>
         {feature}

@@ -1,7 +1,7 @@
 import Project from '../project-listing';
 import ProjectDetailsInterface from '../../assets/data/projectDetailsInterface';
 
-function Projects({ projectData }) {
+function Projects({ projectData }: { projectData: ProjectDetailsInterface[] }) {
   const outpost = projectData.filter(
     (project) => project.projectName === 'Outpost'
   )[0];

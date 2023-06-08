@@ -3,8 +3,6 @@ import ScrollToTop from '../utils/ScrollToTop';
 
 import projectDetails from '../assets/data/projectDetails';
 import myDetails from '../assets/data/myDetails';
-import ProjectDetailsInterface from '../assets/data/projectDetailsInterface';
-import MyDetailsInterface from '../assets/data/myDetailsInterface';
 
 // Components
 import BackgroundImg from '../components/background-img';

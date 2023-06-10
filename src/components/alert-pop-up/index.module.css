@@ -1,13 +1,18 @@
 /* Alert Pop up Styling */
 /* Container */
 .popUp_container {
-  display: flex;
+  display: none;
+  visibility: hidden;
   gap: 1rem;
   position: absolute;
   right: 100px;
   border-radius: 4px;
   padding: 1rem;
   background-color: var(--purple-beige_gradient4);
+}
+.popUp_container.isVisible {
+  display: flex;
+  visibility: visible;
 }
 /* Alert Icon */
 .popUp_container .icon_alert {

@@ -1,9 +1,18 @@
 import React from 'react';
 import popUpStyles from './index.module.css';
 
-export default function AlertPopUp() {
+export default function AlertPopUp({ isAlertVisible, setIsAlertVisible }) {
+  const closeAlertOnClick = () => {
+    setIsAlertVisible(false);
+  };
+
   return (
-    <div className={popUpStyles.popUp_container}>
+    // If state isAlertVisible, set className to .isVisible to render component
+    <div
+      className={`${popUpStyles.popUp_container} ${
+        isAlertVisible && popUpStyles.isVisible
+      }`}
+    >
       {/* Alert Icon */}
       <svg
         className={popUpStyles.icon_alert}
@@ -19,7 +28,7 @@ export default function AlertPopUp() {
         <p className={popUpStyles.description}>email copied to clipboard</p>
       </div>
       {/* Alert Close Btn */}
-      <div>
+      <div onClick={closeAlertOnClick}>
         <svg
           className={popUpStyles.icon_close}
           xmlns='http://www.w3.org/2000/svg'

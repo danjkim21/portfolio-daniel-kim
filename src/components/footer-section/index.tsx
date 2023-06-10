@@ -36,10 +36,16 @@ function Footer({ myData }: { myData: MyDetailsInterface }) {
       >
         dan.jkim21@gmail.com
       </a>
-      <span className='container__copyBtn' onClick={copyEmailToClipBoard}>
-        <i className=' btn__copy fa-regular fa-copy'></i>
+      <span className='container__copyBtn'>
+        <i
+          className=' btn__copy fa-regular fa-copy'
+          onClick={copyEmailToClipBoard}
+        ></i>
         {/* On successful copy to clipboard submission - display alert pop-up */}
-        {!isAlertVisible && <AlertPopUp />}
+        <AlertPopUp
+          isAlertVisible={isAlertVisible}
+          setIsAlertVisible={setIsAlertVisible}
+        />
       </span>
 
       <section className='container__contact'>

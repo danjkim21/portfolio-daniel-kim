@@ -1,0 +1,27 @@
+/* Alert Pop up Styling */
+/* Container */
+.popUp_container {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  right: 100px;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: var(--purple-beige_gradient4);
+}
+/* Alert Icon */
+.popUp_container .icon_alert {
+  font-size: 2rem;
+}
+.popUp_container .icon_alert > path {
+  fill: var(--white);
+}
+.popUp_container .icon_close > path {
+  fill: var(--grey);
+}
+
+/* Alert Text - Heading & Subheading */
+.popUp_message .heading,
+.description {
+  margin: 0;
+}

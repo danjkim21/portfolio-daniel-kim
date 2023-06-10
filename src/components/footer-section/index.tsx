@@ -1,13 +1,31 @@
+import { useEffect, useState } from 'react';
 import MyDetailsInterface from '../../assets/data/myDetailsInterface';
+import AlertPopUp from '../alert-pop-up';
 
 function Footer({ myData }: { myData: MyDetailsInterface }) {
+  // State - controls copy to clipboard alert on success
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
+
   // func - adds text to clipboard using navigator API
-  let copyEmailToClipBoard = async () => {
+  const copyEmailToClipBoard = async () => {
     let emailAddress = 'dan.jkim21@gmail.com';
-    navigator.clipboard.writeText(emailAddress).then(() => {
-      alert(`Copied to clipboard: ${emailAddress}`);
-    });
+    try {
+      await navigator.clipboard.writeText(emailAddress);
+      setIsAlertVisible(true);
+    } catch (err) {
+      console.error(err);
+    }
   };
+
+  // Helper func, closes alert popup after 4 seconds
+  useEffect(() => {
+    const timeId = setTimeout(() => {
+      setIsAlertVisible(false);
+    }, 4000);
+    return () => {
+      clearTimeout(timeId);
+    };
+  }, [isAlertVisible]);
 
   return (
     <footer id='footer' className='section__footer'>
@@ -20,7 +38,10 @@ function Footer({ myData }: { myData: MyDetailsInterface }) {
       </a>
       <span className='container__copyBtn' onClick={copyEmailToClipBoard}>
         <i className=' btn__copy fa-regular fa-copy'></i>
+        {/* On successful copy to clipboard submission - display alert pop-up */}
+        {!isAlertVisible && <AlertPopUp />}
       </span>
+
       <section className='container__contact'>
         <p className='contact__desc'>
           Let's start a conversation! I am currently accepting new freelance

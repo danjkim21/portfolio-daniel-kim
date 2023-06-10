@@ -1,18 +1,24 @@
 /* Alert Pop up Styling */
 /* Container */
 .popUp_container {
-  display: none;
-  visibility: hidden;
+  display: flex;
   gap: 1rem;
   position: absolute;
   right: 100px;
   border-radius: 4px;
   padding: 1rem;
   background-color: var(--purple-beige_gradient4);
+  -webkit-box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
+  transition: all 150ms ease-in-out;
+  visibility: hidden;
+  opacity: 0;
 }
+/* Container on Open/Close State  */
 .popUp_container.isVisible {
-  display: flex;
   visibility: visible;
+  opacity: 1;
 }
 /* Alert Icon */
 .popUp_container .icon_alert {
@@ -29,4 +35,9 @@
 .popUp_message .heading,
 .description {
   margin: 0;
+}
+
+/* Micro-Interactions */
+.popUp_container .icon_close:hover {
+  cursor: pointer;
 }

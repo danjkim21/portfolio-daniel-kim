@@ -25,7 +25,7 @@ export default function AlertPopUp({ isAlertVisible, setIsAlertVisible }) {
       {/* Alert Message Content */}
       <div className={popUpStyles.popUp_message}>
         <h3 className={popUpStyles.heading}>Success!</h3>
-        <p className={popUpStyles.description}>email copied to clipboard</p>
+        <p className={popUpStyles.description}>Email copied to clipboard.</p>
       </div>
       {/* Alert Close Btn */}
       <div onClick={closeAlertOnClick}>

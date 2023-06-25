@@ -1,5 +1,5 @@
 import React from 'react';
-import popUpStyles from './index.module.css';
+import popUpStyles from './index.module.scss';
 
 export default function AlertPopUp({ isAlertVisible, setIsAlertVisible }) {
   const closeAlertOnClick = () => {

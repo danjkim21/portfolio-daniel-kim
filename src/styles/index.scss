@@ -1,8 +1,6 @@
 /* Root App Variables */
-:root {
-  --white: #ffffff;
-  --purple__primary: #2A2A7F;
-}
+$white: #ffffff;
+$purple_primary: #2a2a7f;
 
 /* Root App Styling */
 :root {
@@ -11,8 +9,8 @@
   line-height: 24px;
   font-weight: 400;
 
-  background-color: var(--purple__primary);
-  color: var(--white);
+  background-color: $purple_primary;
+  color: $white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

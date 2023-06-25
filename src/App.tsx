@@ -1,6 +1,6 @@
 // Styling
-import './styles/app.css';
-import './styles/normalize.css';
+import './styles/app.scss';
+import './styles/normalize.scss';
 
 import ProjectRoutes from './router';
 

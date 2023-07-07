@@ -11,16 +11,12 @@ function Projects({ projectData }: { projectData: ProjectDetailsInterface[] }) {
   const arDB = projectData.filter(
     (project) => project.projectName === 'arDB'
   )[0];
-  const cloneify = projectData.filter(
-    (project) => project.projectName === 'Clone-ify: iPadOS'
-  )[0];
 
   return (
     <section id='projects' className='section__projects'>
+      <Project projectData={arDB} />
       <Project projectData={outpost} />
       <Project projectData={bookly} />
-      <Project projectData={arDB} />
-      <Project projectData={cloneify} />
     </section>
   );
 }

@@ -1,4 +1,4 @@
-import ProjectDetailsInterface from './projectDetailsInterface';
+import { ProjectDetailsInterface } from '../../types/dataTypes';
 
 import outpostAppImg from '../../assets/images/outpost-img.jpeg';
 import booklyAppImg from '../../assets/images/bookly-img.jpeg';

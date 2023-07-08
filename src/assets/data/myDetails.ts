@@ -1,4 +1,4 @@
-import MyDetailsInterface from './myDetailsInterface';
+import { MyDetailsInterface } from '../../types/dataTypes';
 
 const myDetails: MyDetailsInterface = {
   linkedIn: 'https://www.linkedin.com/in/danieljayyoungkim/',

@@ -1,4 +1,14 @@
-export default interface ProjectDetails {
+export interface MyDetailsInterface {
+  linkedIn: string;
+  twitter: string;
+  github: string;
+  position: string;
+  location: string;
+  company: string;
+  companyLink: string;
+}
+
+export interface ProjectDetailsInterface {
   id: number;
   projectName: string;
   projectDesc: string;

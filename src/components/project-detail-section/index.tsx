@@ -1,14 +1,14 @@
 import Skill from '../skill-pill';
 import Feature from '../project-features';
 import { useLocation } from 'react-router-dom';
-import ProjectDetailsInterface from '../../assets/data/projectDetailsInterface';
 import { useMemo } from 'react';
+import { ProjectDetailsInterface } from '../../types/dataTypes';
 
-function ProjectDetail({
-  projectData,
-}: {
+export interface ProjectDetailsProps {
   projectData: ProjectDetailsInterface[];
-}) {
+}
+
+function ProjectDetail({ projectData }: ProjectDetailsProps) {
   const { pathname } = useLocation();
 
   const projectDetail = useMemo(() => {

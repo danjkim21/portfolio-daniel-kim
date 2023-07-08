@@ -1,8 +1,12 @@
+import { ProjectDetailsInterface } from '../../types/dataTypes';
 import Skill from '../skill-pill';
 import { Link } from 'react-router-dom';
-import ProjectDetailsInterface from '../../assets/data/projectDetailsInterface';
 
-function Project({ projectData }: { projectData: ProjectDetailsInterface }) {
+export interface ProjectProps {
+  projectData: ProjectDetailsInterface;
+}
+
+function Project({ projectData }: ProjectProps) {
   return (
     <section className='container__project'>
       <section className='project'>

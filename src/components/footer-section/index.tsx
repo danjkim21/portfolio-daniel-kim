@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
-import MyDetailsInterface from '../../assets/data/myDetailsInterface';
+import { MyDetailsInterface } from '../../types/dataTypes';
 import AlertPopUp from '../alert-pop-up';
 
-function Footer({ myData }: { myData: MyDetailsInterface }) {
+export interface FooterProps {
+  myData: MyDetailsInterface;
+}
+
+function Footer({ myData }: FooterProps) {
   // State - controls copy to clipboard alert on success
   const [isAlertVisible, setIsAlertVisible] = useState(false);
 

@@ -1,7 +1,11 @@
+import { ProjectDetailsInterface } from '../../types/dataTypes';
 import Project from '../project-listing';
-import ProjectDetailsInterface from '../../assets/data/projectDetailsInterface';
 
-function Projects({ projectData }: { projectData: ProjectDetailsInterface[] }) {
+export interface ProjectsProps {
+  projectData: ProjectDetailsInterface[];
+}
+
+function Projects({ projectData }: ProjectsProps) {
   const outpost = projectData.filter(
     (project) => project.projectName === 'Outpost'
   )[0];

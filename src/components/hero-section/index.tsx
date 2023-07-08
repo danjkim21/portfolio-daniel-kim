@@ -1,6 +1,10 @@
-import MyDetailsInterface from '../../assets/data/myDetailsInterface';
+import { MyDetailsInterface } from '../../types/dataTypes';
 
-function Hero({ myData }: { myData: MyDetailsInterface }) {
+export interface HeroProps {
+  myData: MyDetailsInterface;
+}
+
+function Hero({ myData }: HeroProps) {
   return (
     <main id='hero' className='section__hero'>
       <h1 className='hero__primaryText'>

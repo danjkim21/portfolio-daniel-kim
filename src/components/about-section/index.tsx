@@ -1,8 +1,12 @@
 import headshot from '../../assets/images/fullheadshot.jpeg';
+import { MyDetailsInterface } from '../../types/dataTypes';
 import Skill from '../skill-pill';
-import MyDetailsInterface from '../../assets/data/myDetailsInterface';
 
-function About({ myData }: { myData: MyDetailsInterface }) {
+export interface AboutProps {
+  myData: MyDetailsInterface;
+}
+
+function About({ myData }: AboutProps) {
   return (
     <section id='about' className='section__about'>
       <section className='contentAbout__left'>

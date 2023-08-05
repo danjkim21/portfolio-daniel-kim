@@ -15,13 +15,28 @@ function Hero({ myData }: HeroProps) {
         <span>{myData.position}</span> @ {myData.company}
       </p>
       <section className='container__socials--hero'>
-        <a href={myData.linkedIn} title='LinkedIn' target='_blank'>
+        <a
+          href={myData.linkedIn}
+          title='LinkedIn'
+          aria-label='LinkedIn'
+          target='_blank'
+        >
           <i className='icon__socials fa-brands fa-linkedin'></i>
         </a>
-        <a href={myData.github} title='GitHub' target='_blank'>
+        <a
+          href={myData.github}
+          title='GitHub'
+          aria-label='Github'
+          target='_blank'
+        >
           <i className='icon__socials fa-brands fa-square-github'></i>
         </a>
-        <a href={myData.twitter} title='Twitter' target='_blank'>
+        <a
+          href={myData.twitter}
+          title='Twitter'
+          aria-label='Twitter'
+          target='_blank'
+        >
           <i className='icon__socials fa-brands fa-square-twitter'></i>
         </a>
       </section>

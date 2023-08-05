@@ -6,7 +6,7 @@ function BackgroundImg() {
       <img
         className='image__backgroundCover'
         src={backgroundImage}
-        alt='Background staggered gradient shapes image'
+        alt='Background image of staggered gradient shapes'
       />
     </>
   );

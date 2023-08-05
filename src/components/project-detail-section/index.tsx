@@ -23,21 +23,22 @@ function ProjectDetail({ projectData }: ProjectDetailsProps) {
   return (
     <>
       <section className='section__projects top'>
-        <h2 className='projectName'>{projectDetail.projectName}</h2>
+        <h1 className='projectName'>{projectDetail.projectName}</h1>
       </section>
 
       <section className='section__projects details'>
         <section className='project'>
           <section className='project__display--left'>
-            <h3 className='projectSubHeader'>About</h3>
+            <h2 className='projectSubHeader'>About</h2>
             <p className='projectDesc'>{projectDetail.projectDescExtra}</p>
-            <h3 className='projectSubHeader'>Notable Features</h3>
+            <h2 className='projectSubHeader'>Notable Features</h2>
             <ul className='projectFeatures'>
               <Feature features={projectDetail.projectFeatures} />
             </ul>
             <section className='container__btn details'>
               <a
                 className='btn__link'
+                aria-label='Navigate to Github repository'
                 href={projectDetail.githubLink}
                 target='_blank'
               >
@@ -45,6 +46,7 @@ function ProjectDetail({ projectData }: ProjectDetailsProps) {
               </a>
               <a
                 className='btn__link'
+                aria-label='Navigate to live site'
                 href={projectDetail.liveLink}
                 target='_blank'
               >
@@ -53,15 +55,19 @@ function ProjectDetail({ projectData }: ProjectDetailsProps) {
             </section>
           </section>
           <section className='project__display--right'>
-            <a href={projectDetail.liveLink} target='_blank'>
+            <a
+              href={projectDetail.liveLink}
+              aria-label='Navigate to live site'
+              target='_blank'
+            >
               <img
                 className='projectImg'
                 src={projectDetail.projectImg}
-                alt='project image'
+                alt={`${projectDetail.projectName} App screenshot`}
                 loading='lazy'
               />
             </a>
-            <h3 className='projectSubHeader'>Technologies Used</h3>
+            <h2 className='projectSubHeader'>Technologies Used</h2>
             <section className='container__skills'>
               <Skill tools={projectDetail.projectToolsExtra} />
             </section>

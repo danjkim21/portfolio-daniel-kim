@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { useScrollLock } from "../../hooks/useScrollLock";
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useScrollLock } from '../../hooks/useScrollLock';
 
 function Header() {
   const { pathname } = useLocation();
@@ -24,46 +24,53 @@ function Header() {
 
   return (
     <header
-      id="header"
-      className={isActive ? "section__header active" : "section__header"}
+      id='header'
+      className={isActive ? 'section__header active' : 'section__header'}
     >
-      <Link className="container__logo" to="/">
-        <i className="header__logo Icon ph-code"></i>
-        <span className="header__logoName hover-underline-animation">
+      <Link
+        className='container__logo'
+        aria-label='Navigate to Portfolio landing page'
+        to='/'
+      >
+        <i className='header__logo Icon ph-code'></i>
+        <span className='header__logoName hover-underline-animation'>
           daniel jay-young kim
         </span>
       </Link>
 
-      {pathname === "/" && (
+      {pathname === '/' && (
         <>
           <i
-            className="hamburgerToggleBtn ph-list"
+            className='hamburgerToggleBtn ph-list'
             onClick={onToggleNavMobile}
           ></i>
-          <nav className={isActive ? "nav active" : "nav"}>
-            <ul className="navList">
-              <li className="navList__items">
+          <nav className={isActive ? 'nav active' : 'nav'}>
+            <ul className='navList'>
+              <li className='navList__items'>
                 <a
-                  href="#about"
-                  className="hover-underline-animation"
+                  href='#about'
+                  aria-label='Navigate to About Me Section'
+                  className='hover-underline-animation'
                   onClick={onNavigate}
                 >
                   about
                 </a>
               </li>
-              <li className="navList__items">
+              <li className='navList__items'>
                 <a
-                  href="#projects"
-                  className="hover-underline-animation"
+                  href='#projects'
+                  aria-label='Navigate to Projects Section'
+                  className='hover-underline-animation'
                   onClick={onNavigate}
                 >
                   projects
                 </a>
               </li>
-              <li className="navList__items">
+              <li className='navList__items'>
                 <a
-                  href="#footer"
-                  className="hover-underline-animation"
+                  href='#footer'
+                  aria-label='Navigate to Footer'
+                  className='hover-underline-animation'
                   onClick={onNavigate}
                 >
                   contact

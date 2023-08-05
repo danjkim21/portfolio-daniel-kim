@@ -6,8 +6,8 @@ const myDetails: MyDetailsInterface = {
   github: 'https://github.com/danjkim21',
   position: 'software engineer',
   location: 'Portland, ME, United States',
-  company: '100Devs',
-  companyLink: 'https://www.linkedin.com/company/100devs/',
+  company: 'Skyward IT Solutions',
+  companyLink: 'https://skywarditsolutions.com/',
 };
 
 export default myDetails;

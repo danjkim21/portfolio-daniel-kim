@@ -20,6 +20,8 @@ function Project({ projectData }: ProjectProps) {
             <Link
               className='btn__link'
               to={`project/${projectData.projectName}`}
+              aria-label={`See ${projectData.projectName} details`}
+              relative='path'
             >
               <i className='btn__project btn__project--secondary ph-arrow-right'></i>
             </Link>
@@ -30,7 +32,7 @@ function Project({ projectData }: ProjectProps) {
             <img
               className='projectImg'
               src={projectData.projectImg}
-              alt='project image'
+              alt={`${projectData.projectName} App screenshot`}
               loading='lazy'
             />
           </a>

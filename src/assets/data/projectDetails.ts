@@ -81,7 +81,14 @@ const projectDetails: ProjectDetailsInterface[] = [
       'Explore technical data via front-end web app or RESTful API',
       'public data scraped using puppeteer.js and cheerio.js',
     ],
-    projectTools: ['React', 'Express', 'Node', 'Cheerio', 'Puppeteer'],
+    projectTools: [
+      'React',
+      'TypeScript',
+      'Express',
+      'Node',
+      'Cheerio',
+      'Puppeteer',
+    ],
     projectToolsExtra: [
       'React',
       'Express',

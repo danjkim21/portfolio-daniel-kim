@@ -47,6 +47,7 @@ function About({ myData }: AboutProps) {
           <Skill
             tools={[
               'JavaScript (ES6+)',
+              'TypeScript',
               'HTML',
               'CSS',
               'React',

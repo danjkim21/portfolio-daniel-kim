@@ -5,7 +5,7 @@ const myDetails: MyDetailsInterface = {
   twitter: 'https://twitter.com/devdanielk',
   github: 'https://github.com/danjkim21',
   position: 'software engineer',
-  location: 'Portland, ME, United States',
+  location: 'Philadelphia, PA, United States',
   company: 'Skyward IT Solutions',
   companyLink: 'https://skywarditsolutions.com/',
 };

@@ -45,11 +45,6 @@ function Footer({ myData }: FooterProps) {
           className=' btn__copy fa-regular fa-copy'
           onClick={copyEmailToClipBoard}
         ></i>
-        {/* On successful copy to clipboard submission - display alert pop-up */}
-        <AlertPopUp
-          isAlertVisible={isAlertVisible}
-          setIsAlertVisible={setIsAlertVisible}
-        />
       </span>
 
       <section className='container__contact'>
@@ -81,6 +76,11 @@ function Footer({ myData }: FooterProps) {
           <span className='icon__label '>{myData.location}</span>
         </a>
       </section>
+      {/* On successful copy to clipboard submission - display alert pop-up */}
+      <AlertPopUp
+        isAlertVisible={isAlertVisible}
+        setIsAlertVisible={setIsAlertVisible}
+      />
     </footer>
   );
 }

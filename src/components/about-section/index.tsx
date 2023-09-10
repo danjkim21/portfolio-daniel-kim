@@ -34,9 +34,8 @@ function About({ myData }: AboutProps) {
             href={myData.companyLink}
             target='_blank'
           >
-            {myData.company}
-          </a>{' '}
-          for a variety of clients.
+            {myData.company}.
+          </a>
         </p>
         <p className='about__text'>
           When I'm not coding, I can be found hiding away in a remote cabin,

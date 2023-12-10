@@ -1,7 +1,14 @@
-import React from 'react';
 import popUpStyles from './index.module.scss';
 
-export default function AlertPopUp({ isAlertVisible, setIsAlertVisible }) {
+export interface AlertPopUpProps {
+  isAlertVisible: boolean;
+  setIsAlertVisible: (value: boolean) => void;
+}
+
+export default function AlertPopUp({
+  isAlertVisible,
+  setIsAlertVisible,
+}: AlertPopUpProps) {
   const closeAlertOnClick = () => {
     setIsAlertVisible(false);
   };

@@ -11,7 +11,8 @@ function Skill({ tools }: SkillProps) {
 		);
 	});
 
-	return <div>{skillPill}</div>;
+	// eslint-disable-next-line react/jsx-no-useless-fragment
+	return <>{skillPill}</>;
 }
 
 export default Skill;

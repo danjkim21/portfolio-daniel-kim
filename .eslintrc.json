@@ -1,0 +1,66 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"plugins": ["@typescript-eslint"],
+	"extends": [
+		"eslint:recommended",
+		"airbnb",
+		"prettier",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended",
+		"plugin:react/recommended",
+		"plugin:import/recommended",
+		"plugin:sonarjs/recommended",
+		"plugin:jsx-a11y/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"eslint-config-prettier"
+	],
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/resolver": {
+			"node": {
+				"paths": ["src"],
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			}
+		}
+	},
+	"rules": {
+		"@typescript-eslint/no-unused-vars": "warn",
+		"@typescript-eslint/no-explicit-any": "error",
+		"react/react-in-jsx-scope": 0,
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".ts", ".tsx", ".js", ".jsx"]
+			}
+		],
+		"react/jsx-props-no-spreading": "off",
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		],
+		"jsx-a11y/anchor-is-valid": [
+			"error",
+			{
+				"components": ["Link"],
+				"specialLink": ["hrefLeft", "hrefRight"],
+				"aspects": ["invalidHref", "preferButton"]
+			}
+		],
+		"jsx-a11y/click-events-have-key-events": ["warn"],
+		"jsx-a11y/no-static-element-interactions": ["warn"],
+		"no-nested-ternary": "off",
+		"import/prefer-default-export": "off"
+	}
+}

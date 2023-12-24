@@ -1,17 +1,17 @@
 export interface SkillProps {
-  tools: string[];
+	tools: string[];
 }
 
 function Skill({ tools }: SkillProps) {
-  let skillPill = tools.map((skill) => {
-    return (
-      <span className='pill__skill' key={Math.random() * 100}>
-        {skill}
-      </span>
-    );
-  });
+	const skillPill = tools.map((skill) => {
+		return (
+			<span className="pill__skill" key={Math.random() * 100}>
+				{skill}
+			</span>
+		);
+	});
 
-  return <>{skillPill}</>;
+	return <div>{skillPill}</div>;
 }
 
 export default Skill;

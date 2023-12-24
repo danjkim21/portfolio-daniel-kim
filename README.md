@@ -19,7 +19,6 @@
 
 I recently built my new portfolio using React. I wanted to turn my old portfolio into a minimal design, funky color scheme and fun animations to reflect my personality and approach to web design.
 
-
 <p align="center">
   <img src="src/assets/portfolio-demo.gif" width="75%" alt="Clone-ify app screenshot"/>
 </p>
@@ -28,11 +27,9 @@ I recently built my new portfolio using React. I wanted to turn my old portfolio
 
 **Tech used:** React, Vite, HTML, CSS <br>
 
-
 ## Roadmap
 
-- [ ] Refactor, refactor, refactor, & refactor 
-
+- [ ] Refactor, refactor, refactor, & refactor
 
 See the [open issues](https://github.com/danjkim21/portfolio-daniel-kim/issues) for a full list of proposed features (and known issues).
 

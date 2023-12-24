@@ -1,0 +1,7 @@
+node_modules/
+dist/
+vite.config.ts
+.prettierrc.json
+.eslintrc.json
+lint-staged.config.cjs
+env.d.ts

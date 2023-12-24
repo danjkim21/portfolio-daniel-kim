@@ -1,15 +1,16 @@
-import React from 'react';
+import { useCallback } from 'react';
+
 export const useScrollLock = () => {
-  const lockScroll = React.useCallback(() => {
-    document.body.style.overflow = 'hidden';
-  }, []);
+	const lockScroll = useCallback(() => {
+		document.body.style.overflow = 'hidden';
+	}, []);
 
-  const unlockScroll = React.useCallback(() => {
-    document.body.style.overflow = '';
-  }, []);
+	const unlockScroll = useCallback(() => {
+		document.body.style.overflow = '';
+	}, []);
 
-  return {
-    lockScroll,
-    unlockScroll,
-  };
+	return {
+		lockScroll,
+		unlockScroll,
+	};
 };

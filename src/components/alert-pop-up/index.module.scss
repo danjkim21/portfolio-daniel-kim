@@ -3,46 +3,46 @@
 /* Alert Pop up Styling */
 /* Container */
 .popUp_container {
-  display: flex;
-  gap: 1rem;
-  position: fixed;  
-  right: 1rem;
-  bottom: 1rem;
-  border-radius: 4px;
-  padding: 1rem;
-  background-color: app.$purple-beige_gradient4;
-  -webkit-box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
-  transition: all 150ms ease-in-out;
-  visibility: hidden;
-  opacity: 0;
+	display: flex;
+	gap: 1rem;
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	border-radius: 4px;
+	padding: 1rem;
+	background-color: app.$purple-beige_gradient4;
+	-webkit-box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
+	transition: all 150ms ease-in-out;
+	visibility: hidden;
+	opacity: 0;
 
-  /* Container on Open/Close State  */
-  &.isVisible {
-    visibility: visible;
-    opacity: 1; 
-  }
+	/* Container on Open/Close State  */
+	&.isVisible {
+		visibility: visible;
+		opacity: 1;
+	}
 
-  /* Alert Icon */
-  .icon_alert {
-    font-size: 2rem;
-  }
-  .icon_alert > path {
-    fill: app.$white;
-  }
-  .icon_close > path {
-    fill: app.$grey;
-  }
+	/* Alert Icon */
+	.icon_alert {
+		font-size: 2rem;
+	}
+	.icon_alert > path {
+		fill: app.$white;
+	}
+	.icon_close > path {
+		fill: app.$grey;
+	}
 
-  /* Alert Text - Heading & Subheading */
-  .popUp_message .heading,
-  .description {
-    margin: 0;
-  }
+	/* Alert Text - Heading & Subheading */
+	.popUp_message .heading,
+	.description {
+		margin: 0;
+	}
 
-  /* Micro-Interactions */
-  .icon_close:hover {
-    cursor: pointer;
-  }
+	/* Micro-Interactions */
+	.icon_close:hover {
+		cursor: pointer;
+	}
 }

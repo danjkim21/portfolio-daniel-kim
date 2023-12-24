@@ -1,17 +1,17 @@
 export interface FeatureProps {
-  features: string[];
+	features: string[];
 }
 
 function Feature({ features }: FeatureProps) {
-  let skillPill = features.map((feature) => {
-    return (
-      <li className='feature__item' key={Math.random() * 100}>
-        {feature}
-      </li>
-    );
-  });
+	const skillPill = features.map((feature) => {
+		return (
+			<li className="feature__item" key={Math.random() * 100}>
+				{feature}
+			</li>
+		);
+	});
 
-  return <>{skillPill}</>;
+	return <div>{skillPill}</div>;
 }
 
 export default Feature;

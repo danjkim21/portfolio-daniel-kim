@@ -14,36 +14,32 @@ import Footer from '../components/footer-section';
 import ProjectDetail from '../components/project-detail-section';
 
 export default function ProjectRoutes() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <BackgroundImg />
-      <Header />
+	return (
+		<Router>
+			<ScrollToTop />
+			<BackgroundImg />
+			<Header />
 
-      <Routes>
-        {/* Landing page sections */}
-        <Route
-          path='*'
-          element={
-            <>
-              <Hero myData={myDetails} />
-              <About myData={myDetails} />
-              <Projects projectData={projectDetails} />
-            </>
-          }
-        />
-        {/* Project Detail page */}
-        <Route
-          path='/project/:projectName'
-          element={
-            <>
-              <ProjectDetail projectData={projectDetails} />
-            </>
-          }
-        />
-      </Routes>
+			<Routes>
+				{/* Landing page sections */}
+				<Route
+					path="*"
+					element={
+						<>
+							<Hero myData={myDetails} />
+							<About myData={myDetails} />
+							<Projects projectData={projectDetails} />
+						</>
+					}
+				/>
+				{/* Project Detail page */}
+				<Route
+					path="/project/:projectName"
+					element={<ProjectDetail projectData={projectDetails} />}
+				/>
+			</Routes>
 
-      <Footer myData={myDetails} />
-    </Router>
-  );
+			<Footer myData={myDetails} />
+		</Router>
+	);
 }

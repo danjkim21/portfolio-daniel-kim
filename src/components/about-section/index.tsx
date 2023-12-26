@@ -45,18 +45,7 @@ function About({ myData }: AboutProps) {
 					innovations in clean energy technologies.
 				</p>
 				<section className="container__skills">
-					<Skill
-						tools={[
-							'JavaScript (ES6+)',
-							'TypeScript',
-							'HTML',
-							'CSS',
-							'React',
-							'Node',
-							'Express',
-							'MongoDB',
-						]}
-					/>
+					<Skill tools={myData.skills} />
 				</section>
 			</section>
 

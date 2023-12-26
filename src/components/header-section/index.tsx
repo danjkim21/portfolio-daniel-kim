@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useScrollLock } from '../../hooks/useScrollLock';
+import { navigationInterface } from '../../types/appInterfaces';
+
+const navigation: navigationInterface[] = [
+	{ key: 1, name: 'about', href: '#about' },
+	{ key: 2, name: 'projects', href: '#projects' },
+	{ key: 3, name: 'contact', href: '#footer' },
+];
 
 function Header() {
 	const { pathname } = useLocation();
@@ -49,36 +56,20 @@ function Header() {
 						aria-hidden={!isActive}
 					>
 						<ul className="navList">
-							<li className="navList__items">
-								<a
-									href="#about"
-									aria-label="Navigate to About Me Section"
-									className="hover-underline-animation"
-									onClick={onNavigate}
-								>
-									about
-								</a>
-							</li>
-							<li className="navList__items">
-								<a
-									href="#projects"
-									aria-label="Navigate to Projects Section"
-									className="hover-underline-animation"
-									onClick={onNavigate}
-								>
-									projects
-								</a>
-							</li>
-							<li className="navList__items">
-								<a
-									href="#footer"
-									aria-label="Navigate to Footer"
-									className="hover-underline-animation"
-									onClick={onNavigate}
-								>
-									contact
-								</a>
-							</li>
+							{navigation.map((item) => {
+								return (
+									<li key={item.key} className="navList__items">
+										<a
+											href={item.href}
+											aria-label="Navigate to About Me Section"
+											className="hover-underline-animation"
+											onClick={onNavigate}
+										>
+											{item.name}
+										</a>
+									</li>
+								);
+							})}
 						</ul>
 					</nav>
 				</>

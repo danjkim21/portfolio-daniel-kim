@@ -8,6 +8,17 @@ const myDetails: MyDetailsInterface = {
 	location: 'Philadelphia, PA, United States',
 	company: 'Skyward IT Solutions',
 	companyLink: 'https://skywarditsolutions.com/',
+	skills: [
+		'JavaScript (ES6+)',
+		'TypeScript',
+		'HTML',
+		'CSS',
+		'React',
+		'Redux',
+		'Node',
+		'Express',
+		'MongoDB',
+	],
 };
 
 export default myDetails;

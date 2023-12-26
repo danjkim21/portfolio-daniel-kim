@@ -6,6 +6,7 @@ export interface MyDetailsInterface {
 	location: string;
 	company: string;
 	companyLink: string;
+	skills: string[];
 }
 
 export interface ProjectDetailsInterface {

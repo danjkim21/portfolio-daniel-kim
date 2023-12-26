@@ -64,7 +64,7 @@ function ProjectDetail({ projectData }: ProjectDetailsProps) {
 								loading="lazy"
 							/>
 						</a>
-						<h2 className="projectSubHeader">Technologies Used</h2>
+						<h3 className="projectSubHeader">Technologies Used</h3>
 						<section className="container__skills">
 							<Skill tools={projectDetail.projectToolsExtra} />
 						</section>

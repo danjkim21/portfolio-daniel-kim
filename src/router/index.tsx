@@ -20,24 +20,26 @@ export default function ProjectRoutes() {
 			<BackgroundImg />
 			<Header />
 
-			<Routes>
-				{/* Landing page sections */}
-				<Route
-					path="*"
-					element={
-						<>
-							<Hero myData={myDetails} />
-							<About myData={myDetails} />
-							<Projects projectData={projectDetails} />
-						</>
-					}
-				/>
-				{/* Project Detail page */}
-				<Route
-					path="/project/:projectName"
-					element={<ProjectDetail projectData={projectDetails} />}
-				/>
-			</Routes>
+			<main className="main">
+				<Routes>
+					{/* Landing page sections */}
+					<Route
+						path="*"
+						element={
+							<>
+								<Hero myData={myDetails} />
+								<About myData={myDetails} />
+								<Projects projectData={projectDetails} />
+							</>
+						}
+					/>
+					{/* Project Detail page */}
+					<Route
+						path="/project/:projectName"
+						element={<ProjectDetail projectData={projectDetails} />}
+					/>
+				</Routes>
+			</main>
 
 			<Footer myData={myDetails} />
 		</Router>

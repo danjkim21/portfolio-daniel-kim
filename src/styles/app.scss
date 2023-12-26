@@ -333,6 +333,9 @@ $beige_primary: #ffc9b3;
 			align-items: flex-start;
 			.projectSubHeader {
 				margin: 1rem 0;
+				font-weight: 500;
+				font-style: italic;
+				font-size: 1.15rem;
 			}
 		}
 	}
@@ -417,6 +420,7 @@ $beige_primary: #ffc9b3;
 	.section__hero {
 		.hero__primaryText {
 			font-size: 2.45rem;
+			line-height: 3rem;
 			width: 75%;
 		}
 	}
@@ -502,6 +506,7 @@ $beige_primary: #ffc9b3;
 	/* Toggle Nav on Hamburger Button Click Styling */
 	.hamburgerToggleBtn {
 		display: block;
+		visibility: visible;
 	}
 
 	.section__header {
@@ -536,6 +541,7 @@ $beige_primary: #ffc9b3;
 		visibility: hidden;
 		&.active {
 			display: block;
+			visibility: visible;
 			width: 100%;
 			height: auto;
 

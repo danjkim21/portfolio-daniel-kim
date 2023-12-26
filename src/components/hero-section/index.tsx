@@ -6,7 +6,7 @@ export interface HeroProps {
 
 function Hero({ myData }: HeroProps) {
 	return (
-		<main id="hero" className="section__hero">
+		<section id="hero" className="section__hero">
 			<h1 className="hero__primaryText">
 				hey, {`i'm`} <span className="textBold">daniel kim.</span> {`i'm`} a
 				software engineer building creative digital solutions.
@@ -43,7 +43,7 @@ function Hero({ myData }: HeroProps) {
 					<i className="icon__socials fa-brands fa-square-twitter" />
 				</a>
 			</section>
-		</main>
+		</section>
 	);
 }
 

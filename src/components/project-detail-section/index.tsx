@@ -2,7 +2,7 @@
 import { useLocation } from 'react-router-dom';
 import { useMemo } from 'react';
 import Skill from '../skill-pill';
-import Feature from '../project-features';
+import Feature from './components/project-features';
 import { ProjectDetailsInterface } from '../../types/dataTypes';
 
 export interface ProjectDetailsProps {

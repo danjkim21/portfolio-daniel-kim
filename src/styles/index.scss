@@ -22,6 +22,10 @@ $purple_primary: #2a2a7f;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 }
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	min-height: 100vh;
 }

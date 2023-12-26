@@ -1,0 +1,21 @@
+/************* BackgroundImg Component Styling *************/
+.image__backgroundCover {
+	z-index: -1;
+	position: absolute;
+	right: 0;
+	top: 0;
+	/* prevents background svg from being selectable */
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+@media all and (max-width: 760px) {
+	/* Background svg Image */
+	.image__backgroundCover {
+		max-width: 550px;
+	}
+}

@@ -19,6 +19,7 @@ export default function AlertPopUp({
 			className={`${popUpStyles.popUp_container} ${
 				isAlertVisible && popUpStyles.isVisible
 			}`}
+			aria-hidden={!isAlertVisible}
 		>
 			{/* Alert Icon */}
 			<svg

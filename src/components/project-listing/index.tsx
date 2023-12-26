@@ -9,7 +9,7 @@ export interface ProjectProps {
 function Project({ projectData }: ProjectProps) {
 	return (
 		<section className="container__project">
-			<section className="project">
+			<article className="project">
 				<section className="project__display--left">
 					<h2 className="projectName">{projectData.projectName}</h2>
 					<p className="projectDesc">{projectData.projectDesc}</p>
@@ -28,7 +28,7 @@ function Project({ projectData }: ProjectProps) {
 					</section>
 				</section>
 				<section className="project__display--right">
-					<a href={projectData.liveLink} target="_blank" rel="noreferrer">
+					<a href={projectData.liveLink.href} target="_blank" rel="noreferrer">
 						<img
 							className="projectImg"
 							src={projectData.projectImg}
@@ -37,7 +37,7 @@ function Project({ projectData }: ProjectProps) {
 						/>
 					</a>
 				</section>
-			</section>
+			</article>
 		</section>
 	);
 }

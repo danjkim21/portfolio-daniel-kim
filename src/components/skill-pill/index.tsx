@@ -1,3 +1,5 @@
+import pillStyles from './index.module.scss';
+
 export interface SkillProps {
 	tools: string[];
 }
@@ -5,7 +7,7 @@ export interface SkillProps {
 function Skill({ tools }: SkillProps) {
 	const skillPill = tools.map((skill) => {
 		return (
-			<span className="pill__skill" key={Math.random() * 100}>
+			<span className={pillStyles.pill__skill} key={Math.random() * 100}>
 				{skill}
 			</span>
 		);

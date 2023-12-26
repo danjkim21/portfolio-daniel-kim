@@ -20,12 +20,12 @@
 I recently built my new portfolio using React. I wanted to turn my old portfolio into a minimal design, funky color scheme and fun animations to reflect my personality and approach to web design.
 
 <p align="center">
-  <img src="src/assets/portfolio-demo.gif" width="75%" alt="Clone-ify app screenshot"/>
+  <img src="src/assets/images/portfolio-demo.gif" width="75%" alt="Clone-ify app screenshot"/>
 </p>
 
 ## How It's Made
 
-**Tech used:** React, Vite, HTML, CSS <br>
+**Tech used:** React, Vite, TypeScript, HTML, CSS <br>
 
 ## Roadmap
 

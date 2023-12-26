@@ -44,7 +44,10 @@ function Header() {
 						className="hamburgerToggleBtn ph-list"
 						onClick={onToggleNavMobile}
 					/>
-					<nav className={isActive ? 'nav active' : 'nav'}>
+					<nav
+						className={isActive ? 'nav active' : 'nav'}
+						aria-hidden={!isActive}
+					>
 						<ul className="navList">
 							<li className="navList__items">
 								<a

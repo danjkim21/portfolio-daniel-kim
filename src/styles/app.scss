@@ -142,6 +142,7 @@ $beige_primary: #ffc9b3;
 
 .hamburgerToggleBtn {
 	display: none;
+	visibility: hidden;
 	color: $purple_dark;
 	font-size: 1.75rem;
 	&:hover {
@@ -244,14 +245,13 @@ $beige_primary: #ffc9b3;
 		flex-direction: column;
 	}
 	.project__display--left {
+		margin-right: 2.25rem;
+
 		.projectName {
 			margin-top: 0;
 			font-size: 2rem;
 			font-weight: 700;
 			letter-spacing: 1px;
-		}
-		.projectDesc {
-			width: 70%;
 		}
 
 		.container__btn,
@@ -492,6 +492,7 @@ $beige_primary: #ffc9b3;
 	/* Header Section */
 	.header__logoName {
 		display: none;
+		visibility: hidden;
 	}
 	.header__logo {
 		font-size: 1.75rem;
@@ -532,6 +533,7 @@ $beige_primary: #ffc9b3;
 	}
 	.nav {
 		display: none;
+		visibility: hidden;
 		&.active {
 			display: block;
 			width: 100%;

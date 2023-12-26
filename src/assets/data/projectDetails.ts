@@ -79,7 +79,9 @@ const projectDetails: ProjectDetailsInterface[] = [
 		projectImg: ardbAppImg,
 		projectGif: '',
 		projectFeatures: [
-			'Explore technical data via front-end web app or RESTful API',
+			'Explore technical data via single-page application or RESTful API',
+			'Search for a specific reactor design, or filter by design category',
+			'Log in to developer dashboard portal built using Material UI',
 			'public data scraped using puppeteer.js and cheerio.js',
 		],
 		projectTools: [

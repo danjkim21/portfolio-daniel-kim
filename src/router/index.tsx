@@ -20,7 +20,7 @@ export default function ProjectRoutes() {
 			<BackgroundImg />
 			<Header />
 
-			<main className="main">
+			<main id="main">
 				<Routes>
 					{/* Landing page sections */}
 					<Route

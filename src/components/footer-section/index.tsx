@@ -57,7 +57,7 @@ function Footer({ myData }: FooterProps) {
 
 			<section className="container__socials--footer">
 				<a
-					href={myData.linkedIn}
+					href={myData.linkedIn.href}
 					title="LinkedIn"
 					target="_blank"
 					rel="noreferrer"
@@ -66,13 +66,18 @@ function Footer({ myData }: FooterProps) {
 					<span className="icon__label">linkedin</span>
 				</a>
 
-				<a href={myData.github} title="GitHub" target="_blank" rel="noreferrer">
+				<a
+					href={myData.github.href}
+					title="GitHub"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<i className="icon__socials fa-brands fa-square-github" />
 					<span className="icon__label">github</span>
 				</a>
 
 				<a
-					href={myData.twitter}
+					href={myData.twitter.href}
 					title="Twitter"
 					target="_blank"
 					rel="noreferrer"

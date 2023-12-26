@@ -14,7 +14,7 @@ function About({ myData }: AboutProps) {
 					I specialize in developing{' '}
 					<a
 						className="pageLinks hover-underline-animation"
-						href={myData.github}
+						href={myData.github.href}
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -32,7 +32,7 @@ function About({ myData }: AboutProps) {
 					digital experiences at{' '}
 					<a
 						className="pageLinks hover-underline-animation"
-						href={myData.companyLink}
+						href={myData.companyLink.href}
 						target="_blank"
 						rel="noreferrer"
 					>

@@ -16,7 +16,7 @@ function Hero({ myData }: HeroProps) {
 			</p>
 			<section className="container__socials--hero">
 				<a
-					href={myData.linkedIn}
+					href={myData.linkedIn.href}
 					title="LinkedIn"
 					aria-label="LinkedIn"
 					target="_blank"
@@ -25,7 +25,7 @@ function Hero({ myData }: HeroProps) {
 					<i className="icon__socials fa-brands fa-linkedin" />
 				</a>
 				<a
-					href={myData.github}
+					href={myData.github.href}
 					title="GitHub"
 					aria-label="Github"
 					target="_blank"
@@ -34,7 +34,7 @@ function Hero({ myData }: HeroProps) {
 					<i className="icon__socials fa-brands fa-square-github" />
 				</a>
 				<a
-					href={myData.twitter}
+					href={myData.twitter.href}
 					title="Twitter"
 					aria-label="Twitter"
 					target="_blank"

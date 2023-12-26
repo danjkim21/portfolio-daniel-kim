@@ -36,7 +36,7 @@ function ProjectDetail({ projectData }: ProjectDetailsProps) {
 							<a
 								className="btn__link"
 								aria-label="Navigate to Github repository"
-								href={projectDetail.githubLink}
+								href={projectDetail.githubLink.href}
 								target="_blank"
 							>
 								<i className="btn__project btn__project--primary fa-brands fa-github" />
@@ -44,7 +44,7 @@ function ProjectDetail({ projectData }: ProjectDetailsProps) {
 							<a
 								className="btn__link"
 								aria-label="Navigate to live site"
-								href={projectDetail.liveLink}
+								href={projectDetail.liveLink.href}
 								target="_blank"
 							>
 								<i className="btn__project btn__project--secondary ph-arrow-right" />
@@ -53,7 +53,7 @@ function ProjectDetail({ projectData }: ProjectDetailsProps) {
 					</section>
 					<section className="project__display--right">
 						<a
-							href={projectDetail.liveLink}
+							href={projectDetail.liveLink.href}
 							aria-label="Navigate to live site"
 							target="_blank"
 						>

@@ -1,11 +1,11 @@
 export interface MyDetailsInterface {
-	linkedIn: string;
-	twitter: string;
-	github: string;
+	linkedIn: URL;
+	twitter: URL;
+	github: URL;
 	position: string;
 	location: string;
 	company: string;
-	companyLink: string;
+	companyLink: URL;
 	skills: string[];
 }
 
@@ -14,8 +14,8 @@ export interface ProjectDetailsInterface {
 	projectName: string;
 	projectDesc: string;
 	projectDescExtra: string;
-	githubLink: string;
-	liveLink: string;
+	githubLink: URL;
+	liveLink: URL;
 	projectImg: string;
 	projectGif: string;
 	projectFeatures: string[];

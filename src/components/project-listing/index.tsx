@@ -28,7 +28,7 @@ function Project({ projectData }: ProjectProps) {
 					</section>
 				</section>
 				<section className="project__display--right">
-					<a href={projectData.liveLink} target="_blank" rel="noreferrer">
+					<a href={projectData.liveLink.href} target="_blank" rel="noreferrer">
 						<img
 							className="projectImg"
 							src={projectData.projectImg}

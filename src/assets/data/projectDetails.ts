@@ -86,7 +86,7 @@ const projectDetails: ProjectDetailsInterface[] = [
 			'TypeScript',
 			'Express',
 			'Node',
-			'Cheerio',
+			'Material UI',
 			'Puppeteer',
 		],
 		projectToolsExtra: [
@@ -94,37 +94,11 @@ const projectDetails: ProjectDetailsInterface[] = [
 			'Express',
 			'JavaScript',
 			'Node',
+			'Material UI',
 			'Cheerio',
 			'Puppeteer',
 			'Vite',
 			'SPA',
-		],
-	},
-	{
-		id: 4,
-		projectName: 'Clone-ify: iPadOS',
-		projectDesc:
-			"I've always loved the visual design of the iPad operating system. This web app simulates the iPad OS from displaying widgets, to applications. The project integrates weather and music APIs, with many more features planned.",
-		projectDescExtra:
-			"I've always loved the visual design elements of the iPad operating system (OS). This project simulates the iPad OS, from displaying widgets, to functional applications (eg. safari, messenger, etc.). It is a work in progress and is constantly evolving as new features are planned and implemented.This was a fun personal project that was designed to showcase more of my front end development skills. It displays my ability to breakdown and reconstruct application features and layout components.",
-		githubLink: 'https://github.com/danjkim21/clonify-ipadOS',
-		liveLink: 'https://danjkim21.github.io/clonify-ipadOS/',
-		projectImg: cloneifyAppImg,
-		projectGif: '',
-		projectFeatures: [
-			'Weather widget fetching data from the OpenWeatherMaps API',
-			'Top songs data fetched from the LastFM API',
-			'Custom mouse cursor stylized to the iPad OS',
-			'Custom CSS animations and transitions',
-		],
-		projectTools: ['HTML', 'CSS', 'JavaScript'],
-		projectToolsExtra: [
-			'HTML',
-			'CSS',
-			'JavaScript',
-			'Flexbox',
-			'OpenWeatherMap API',
-			'LastFM API',
 		],
 	},
 ];

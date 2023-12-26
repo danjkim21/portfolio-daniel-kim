@@ -16,21 +16,6 @@ $purple-beige_gradient8: #d5a9aa;
 $purple-beige_gradient9: #eab9ae;
 $beige_primary: #ffc9b3;
 
-/************* BackgroundImg Component Styling *************/
-.image__backgroundCover {
-	z-index: -1;
-	position: absolute;
-	right: 0;
-	top: 0;
-	/* prevents background svg from being selectable */
-	user-drag: none;
-	-webkit-user-drag: none;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-}
-
 /************* General Component Styling *************/
 /* Section Containers */
 .section__hero,
@@ -104,15 +89,6 @@ $beige_primary: #ffc9b3;
 	flex-wrap: wrap;
 	gap: 0.55rem 0.45rem;
 }
-.pill__skill {
-	display: inline-block;
-	font-size: 0.85rem;
-	font-weight: 500;
-	padding: 2px 12px;
-	background-color: $purple-beige_gradient3;
-	border-radius: 4px;
-}
-
 /************* Header Component Styling *************/
 .section__header {
 	display: flex;
@@ -447,10 +423,6 @@ $beige_primary: #ffc9b3;
 }
 
 @media all and (max-width: 760px) {
-	/* Background svg Image */
-	.image__backgroundCover {
-		max-width: 550px;
-	}
 	/* Footer Section */
 	.section__footer {
 		.container__contact {

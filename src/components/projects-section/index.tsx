@@ -1,14 +1,12 @@
-import { ProjectDetailsInterface } from '../../types/dataTypes';
+import { useDetailsContext } from '../../contexts/detailsContext';
 import ProjectListing from '../project-listing';
 
-export interface ProjectsProps {
-	projectData: ProjectDetailsInterface[];
-}
+function Projects() {
+	const { projectDetails } = useDetailsContext();
 
-function Projects({ projectData }: ProjectsProps) {
 	return (
 		<section id="projects" className="section__projects">
-			{projectData.map((project) => {
+			{projectDetails.map((project) => {
 				return <ProjectListing key={project.id} projectData={project} />;
 			})}
 		</section>

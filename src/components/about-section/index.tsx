@@ -1,12 +1,10 @@
 import headshot from '../../assets/images/fullheadshot.jpeg';
-import { MyDetailsInterface } from '../../types/dataTypes';
+import { useDetailsContext } from '../../contexts/detailsContext';
 import Skill from '../skill-pill';
 
-export interface AboutProps {
-	myData: MyDetailsInterface;
-}
+function About() {
+	const { myDetails } = useDetailsContext();
 
-function About({ myData }: AboutProps) {
 	return (
 		<section id="about" className="section__about">
 			<section className="contentAbout__left">
@@ -14,7 +12,7 @@ function About({ myData }: AboutProps) {
 					I specialize in developing{' '}
 					<a
 						className="pageLinks hover-underline-animation"
-						href={myData.github.href}
+						href={myDetails.github.href}
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -32,11 +30,11 @@ function About({ myData }: AboutProps) {
 					digital experiences at{' '}
 					<a
 						className="pageLinks hover-underline-animation"
-						href={myData.companyLink.href}
+						href={myDetails.companyLink.href}
 						target="_blank"
 						rel="noreferrer"
 					>
-						{myData.company}.
+						{myDetails.company}.
 					</a>
 				</p>
 				<p className="about__text">
@@ -45,7 +43,7 @@ function About({ myData }: AboutProps) {
 					innovations in clean energy technologies.
 				</p>
 				<section className="container__skills">
-					<Skill tools={myData.skills} />
+					<Skill tools={myDetails.skills} />
 				</section>
 			</section>
 

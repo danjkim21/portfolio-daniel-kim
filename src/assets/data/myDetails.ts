@@ -4,6 +4,7 @@ const myDetails: MyDetailsInterface = {
 	linkedIn: new URL('https://www.linkedin.com/in/danieljayyoungkim/'),
 	twitter: new URL('https://twitter.com/devdanielk'),
 	github: new URL('https://github.com/danjkim21'),
+	email: 'dan.jkim21@gmail.com',
 	position: 'software engineer',
 	location: 'Philadelphia, PA, United States',
 	company: 'Skyward IT Solutions',

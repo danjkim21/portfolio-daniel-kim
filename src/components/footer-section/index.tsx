@@ -10,7 +10,7 @@ function Footer() {
 
 	// func - adds text to clipboard using navigator API
 	const copyEmailToClipBoard = async () => {
-		const emailAddress = 'dan.jkim21@gmail.com';
+		const emailAddress = myDetails.email;
 		try {
 			await navigator.clipboard.writeText(emailAddress);
 			setIsAlertVisible(true);
@@ -21,11 +21,11 @@ function Footer() {
 
 	// Helper func, closes alert popup after 4 seconds
 	useEffect(() => {
-		const timeId = setTimeout(() => {
+		const timeOutId = setTimeout(() => {
 			setIsAlertVisible(false);
 		}, 4000);
 		return () => {
-			clearTimeout(timeId);
+			clearTimeout(timeOutId);
 		};
 	}, [isAlertVisible]);
 

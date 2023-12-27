@@ -2,6 +2,7 @@ export interface MyDetailsInterface {
 	linkedIn: URL;
 	twitter: URL;
 	github: URL;
+	email: string;
 	position: string;
 	location: string;
 	company: string;

@@ -3,18 +3,15 @@ import { useLocation } from 'react-router-dom';
 import { useMemo } from 'react';
 import Skill from '../skill-pill';
 import Feature from './components/project-features';
-import { ProjectDetailsInterface } from '../../types/dataTypes';
+import { useDetailsContext } from '../../contexts/detailsContext';
 
-export interface ProjectDetailsProps {
-	projectData: ProjectDetailsInterface[];
-}
-
-function ProjectDetail({ projectData }: ProjectDetailsProps) {
+function ProjectDetail() {
 	const { pathname } = useLocation();
+	const { projectDetails } = useDetailsContext();
 
 	const projectDetail = useMemo(() => {
 		const name = pathname.split('/').slice(-1).toString();
-		return projectData.filter((project) => project.projectName === name)[0];
+		return projectDetails.filter((project) => project.projectName === name)[0];
 	}, [pathname]);
 
 	return (

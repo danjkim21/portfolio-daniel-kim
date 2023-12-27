@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
-import { MyDetailsInterface } from '../../types/dataTypes';
 import AlertPopUp from '../alert-pop-up';
+import { useDetailsContext } from '../../contexts/detailsContext';
 
-export interface FooterProps {
-	myData: MyDetailsInterface;
-}
+function Footer() {
+	const { myDetails } = useDetailsContext();
 
-function Footer({ myData }: FooterProps) {
 	// State - controls copy to clipboard alert on success
 	const [isAlertVisible, setIsAlertVisible] = useState(false);
 
@@ -57,7 +55,7 @@ function Footer({ myData }: FooterProps) {
 
 			<section className="container__socials--footer">
 				<a
-					href={myData.linkedIn.href}
+					href={myDetails.linkedIn.href}
 					title="LinkedIn"
 					target="_blank"
 					rel="noreferrer"
@@ -67,7 +65,7 @@ function Footer({ myData }: FooterProps) {
 				</a>
 
 				<a
-					href={myData.github.href}
+					href={myDetails.github.href}
 					title="GitHub"
 					target="_blank"
 					rel="noreferrer"
@@ -77,7 +75,7 @@ function Footer({ myData }: FooterProps) {
 				</a>
 
 				<a
-					href={myData.twitter.href}
+					href={myDetails.twitter.href}
 					title="Twitter"
 					target="_blank"
 					rel="noreferrer"
@@ -88,7 +86,7 @@ function Footer({ myData }: FooterProps) {
 
 				<a title="Location">
 					<i className="icon__socials fa-solid fa-location-arrow" />
-					<span className="icon__label ">{myData.location}</span>
+					<span className="icon__label ">{myDetails.location}</span>
 				</a>
 			</section>
 			{/* On successful copy to clipboard submission - display alert pop-up */}

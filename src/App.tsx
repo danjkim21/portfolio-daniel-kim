@@ -3,12 +3,15 @@ import './styles/app.scss';
 import './styles/normalize.scss';
 
 import ProjectRoutes from './router';
+import DetailsContextProvider from './contexts/detailsContext';
 
 function App() {
 	return (
-		<div className="App">
-			<ProjectRoutes />
-		</div>
+		<DetailsContextProvider>
+			<div className="App">
+				<ProjectRoutes />
+			</div>
+		</DetailsContextProvider>
 	);
 }
 

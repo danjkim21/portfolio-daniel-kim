@@ -1,9 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from '../utils/ScrollToTop';
 
-import projectDetails from '../assets/data/projectDetails';
-import myDetails from '../assets/data/myDetails';
-
 // Components
 import BackgroundImg from '../components/background-img';
 import Header from '../components/header-section';
@@ -27,21 +24,18 @@ export default function ProjectRoutes() {
 						path="*"
 						element={
 							<>
-								<Hero myData={myDetails} />
-								<About myData={myDetails} />
-								<Projects projectData={projectDetails} />
+								<Hero />
+								<About />
+								<Projects />
 							</>
 						}
 					/>
 					{/* Project Detail page */}
-					<Route
-						path="/project/:projectName"
-						element={<ProjectDetail projectData={projectDetails} />}
-					/>
+					<Route path="/project/:projectName" element={<ProjectDetail />} />
 				</Routes>
 			</main>
 
-			<Footer myData={myDetails} />
+			<Footer />
 		</Router>
 	);
 }

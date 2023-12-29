@@ -30,7 +30,7 @@ function Project({ projectData }: ProjectProps) {
 				<section className="project__display--right">
 					<a href={projectData.liveLink.href} target="_blank" rel="noreferrer">
 						<img
-							className="projectImg"
+							className="projectImg animate"
 							src={projectData.projectImg}
 							alt={`${projectData.projectName} App screenshot`}
 							loading="lazy"

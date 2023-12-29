@@ -82,6 +82,14 @@ $beige_primary: #ffc9b3;
 		transform-origin: bottom left;
 	}
 }
+
+/* Animations */
+@keyframes fade-in {
+	from {scale: .8; opacity: 0;}
+	to {scale: 1; opacity: 1;}
+	
+}
+
 /* Pill Component */
 .container__skills {
 	display: flex;
@@ -289,15 +297,22 @@ $beige_primary: #ffc9b3;
 			object-fit: contain;
 			max-width: 100%;
 			max-height: 100%;
-			/* height: 320px; */
 			border-radius: 4px;
 			box-shadow: 0 0 10px rgb(0 0 0 / 45%);
 			transition: all ease-in-out 100ms;
-		}
-		.projectImg:hover {
-			box-shadow: 0 0 10px rgba(0, 0, 0, 25%);
-			-webkit-transform: scale(1.01);
-			transform: scale(1.01);
+
+			&.animate {
+				animation: fade-in linear;
+				animation-timeline: view();
+				animation-range-start: cover;
+				animation-range-end: 300px;
+			}
+
+			&:hover {
+				box-shadow: 0 0 10px rgba(0, 0, 0, 25%);
+				-webkit-transform: scale(1.01);
+				transform: scale(1.01);
+			}
 		}
 	}
 }

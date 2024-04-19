@@ -1,17 +1,11 @@
-/* Root App Variables */
-$white: #ffffff;
-$purple_primary: #2a2a7f;
+@use './variables.scss' as *;
 
 /* Root App Styling */
 :root {
-	font-family:
-		Helvetica Neue,
-		Roboto,
-		Arial,
-		sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 400;
+	font-family: $font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-weight: $base-font-weight;
 
 	background-color: $purple_primary;
 	color: $white;

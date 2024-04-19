@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 /************* BackgroundImg Component Styling *************/
 .image__backgroundCover {
 	z-index: -1;
@@ -13,7 +15,7 @@
 	-ms-user-select: none;
 }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: $breakpoint-lg) {
 	/* Background svg Image */
 	.image__backgroundCover {
 		max-width: 550px;

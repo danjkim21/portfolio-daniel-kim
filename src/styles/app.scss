@@ -408,15 +408,7 @@
 
 
 /************* Media Queries *************/
-
-/* BreakPoints */
-/* --xl: 1440px;
-  --l: 1085px;
-  --m: 760px;
-  --sm: 550px;
-  --xsm: 390px; */
-
-@media all and (max-width: 1085px) {
+@media all and (max-width: $breakpoint-xl) {
 	/* Hero Section */
 	.section__hero {
 		.hero__primaryText {
@@ -427,7 +419,7 @@
 	}
 }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: $breakpoint-lg) {
 	/* Footer Section */
 	.section__footer {
 		.container__contact {
@@ -474,7 +466,7 @@
 	}
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: $breakpoint-md) {
 	/* Section Containers */
 	.section__hero,
 	.section__about,

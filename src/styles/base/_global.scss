@@ -1,20 +1,31 @@
-/************* Root App Variables *************/
-$white: #ffffff;
-$grey: #d9d9d9;
-$black: #000000;
-$purple_primary: #2a2a7f;
-$purple_dark: #151a80;
-$purple_transparent: #ffffff0d;
-$purple-beige_gradient1: #403a89;
-$purple-beige_gradient2: #554a8e;
-$purple-beige_gradient3: #6a5a92;
-$purple-beige_gradient4: #806a97;
-$purple-beige_gradient5: #95799c;
-$purple-beige_gradient6: #aa89a0;
-$purple-beige_gradient7: #bf99a5;
-$purple-beige_gradient8: #d5a9aa;
-$purple-beige_gradient9: #eab9ae;
-$beige_primary: #ffc9b3;
+@use 'variables' as *;
+
+/* Root App Styling */
+:root {
+	font-family: $font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-weight: $base-font-weight;
+
+	background-color: $purple_primary;
+	color: $white;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /************* General Component Styling *************/
 /* Section Containers */
@@ -80,15 +91,6 @@ $beige_primary: #ffc9b3;
 	&:hover:after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
-	}
-}
-
-/* Animations */
-@media(prefers-reduced-motion: no-preference) {
-	@keyframes fade-in {
-		from {scale: .8; opacity: 0;}
-		to {scale: 1; opacity: 1;}
-		
 	}
 }
 
@@ -424,15 +426,7 @@ $beige_primary: #ffc9b3;
 
 
 /************* Media Queries *************/
-
-/* BreakPoints */
-/* --xl: 1440px;
-  --l: 1085px;
-  --m: 760px;
-  --sm: 550px;
-  --xsm: 390px; */
-
-@media all and (max-width: 1085px) {
+@media all and (max-width: $breakpoint-xl) {
 	/* Hero Section */
 	.section__hero {
 		.hero__primaryText {
@@ -443,7 +437,7 @@ $beige_primary: #ffc9b3;
 	}
 }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: $breakpoint-lg) {
 	/* Footer Section */
 	.section__footer {
 		.container__contact {
@@ -490,7 +484,7 @@ $beige_primary: #ffc9b3;
 	}
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: $breakpoint-md) {
 	/* Section Containers */
 	.section__hero,
 	.section__about,
@@ -621,11 +615,5 @@ $beige_primary: #ffc9b3;
 				font-weight: 500;
 			}
 		}
-	}
-}
-
-@media (prefers-reduced-motion) {
-	html {
-		scroll-behavior: auto;
 	}
 }

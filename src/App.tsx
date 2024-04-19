@@ -1,7 +1,3 @@
-// Styling
-import './styles/app.scss';
-import './styles/normalize.scss';
-
 import ProjectRoutes from './router';
 import DetailsContextProvider from './contexts/detailsContext';
 

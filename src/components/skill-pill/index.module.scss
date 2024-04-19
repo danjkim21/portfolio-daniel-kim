@@ -1,4 +1,4 @@
-@use '../../styles/app'; // import style vars from app.scss
+@use '../../styles/base/variables' as *;
 
 /* Pill Component */
 .pill__skill {
@@ -6,6 +6,6 @@
 	font-size: 0.8125rem;
 	font-weight: 500;
 	padding: 2px 12px;
-	background-color: app.$purple-beige_gradient3;
+	background-color: $purple-beige_gradient3;
 	border-radius: 4px;
 }

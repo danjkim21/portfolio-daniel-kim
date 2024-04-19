@@ -1,4 +1,4 @@
-@use '../../styles/app'; // import style vars from app.scss
+@use '../../styles/base/variables' as *;
 
 /* Alert Pop up Styling */
 /* Container */
@@ -10,7 +10,7 @@
 	bottom: 1rem;
 	border-radius: 4px;
 	padding: 1rem;
-	background-color: app.$purple-beige_gradient4;
+	background-color: $purple-beige_gradient4;
 	-webkit-box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
 	box-shadow: 4px 4px 30px -12px rgba(0, 0, 0, 0.5);
@@ -29,10 +29,10 @@
 		font-size: 2rem;
 	}
 	.icon_alert > path {
-		fill: app.$white;
+		fill: $white;
 	}
 	.icon_close > path {
-		fill: app.$grey;
+		fill: $grey;
 	}
 
 	/* Alert Text - Heading & Subheading */

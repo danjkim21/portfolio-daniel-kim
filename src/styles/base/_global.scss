@@ -94,15 +94,6 @@ body {
 	}
 }
 
-/* Animations */
-@media(prefers-reduced-motion: no-preference) {
-	@keyframes fade-in {
-		from {scale: .8; opacity: 0;}
-		to {scale: 1; opacity: 1;}
-		
-	}
-}
-
 /* Pill Component */
 .container__skills {
 	display: flex;
@@ -624,11 +615,5 @@ body {
 				font-weight: 500;
 			}
 		}
-	}
-}
-
-@media (prefers-reduced-motion) {
-	html {
-		scroll-behavior: auto;
 	}
 }

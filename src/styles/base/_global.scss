@@ -20,9 +20,11 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
+#root {
 	min-height: 100vh;
-	max-width: 1280px;
+	max-width: 1085px;
+	display: flex;
+	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
 }

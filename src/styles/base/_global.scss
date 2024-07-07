@@ -142,7 +142,7 @@ html {
 		display: inline-block;
 
 		a {
-			color: $purple_dark;
+			color: white;
 			font-weight: 700;
 			text-decoration: none;
 			margin-left: 2rem;
@@ -428,6 +428,16 @@ html {
 
 
 /************* Media Queries *************/
+@media all and (max-width: $breakpoint-xxl) {
+	.nav {
+		.navList__items {
+				a {
+				color: $purple_dark;
+			}
+		}
+	}
+}
+
 @media all and (max-width: $breakpoint-xl) {
 	/* Hero Section */
 	.section__hero {

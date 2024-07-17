@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useMemo } from 'react';
 import Skill from '../skill-pill';
 import Feature from './components/project-features';
@@ -18,6 +18,14 @@ function ProjectDetail() {
 		<>
 			<section className="section__projects top">
 				<h1 className="projectName">{projectDetail.projectName}</h1>
+				<Link
+					className="btn__link"
+					to="/#projects"
+					aria-label="Navigate back to landing page"
+					relative="path"
+				>
+					<i className="btn__project btn__project--secondary ph-house" />
+				</Link>
 			</section>
 
 			<section className="section__projects details">

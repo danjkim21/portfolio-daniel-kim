@@ -95,6 +95,28 @@ html {
 		transform-origin: bottom left;
 	}
 }
+/* Button Styling - Primary (Project navigation) and Secondary (Other links) */
+.btn__project {
+	font-size: 24px;
+	padding: 0.65rem;
+	border-radius: 50%;
+	transition: all ease-in-out 55ms;
+	color: $white;
+	text-decoration: none;
+
+	&:hover {
+		border: 2px solid $purple-beige_gradient5;
+		background-color: $purple-beige_gradient5;
+	}
+	&--primary {
+		border: 2px solid $purple-beige_gradient3;
+		background-color: $purple-beige_gradient3;
+		margin-right: 1rem;
+	}
+	&--secondary {
+		border: 2px solid $white;
+	}
+}
 
 /* Pill Component */
 .container__skills {
@@ -276,24 +298,6 @@ html {
 			justify-content: flex-start;
 			align-items: flex-start;
 		}
-		.btn__project {
-			font-size: 24px;
-			padding: 0.65rem;
-			border-radius: 50%;
-			transition: all ease-in-out 55ms;
-		}
-		.btn__project:hover {
-			border: 1px solid $purple-beige_gradient5;
-			background-color: $purple-beige_gradient5;
-		}
-		.btn__project--primary {
-			border: 1px solid $purple-beige_gradient3;
-			background-color: $purple-beige_gradient3;
-			margin-right: 1rem;
-		}
-		.btn__project--secondary {
-			border: 1px solid $white;
-		}
 	}
 	.project__display--right {
 		align-items: flex-end;
@@ -325,6 +329,12 @@ html {
 
 /* Project Details Page Section Component */
 .section__projects {
+	&.top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 	&.details {
 		.projectSubHeader {
 			margin-top: 0;
@@ -342,12 +352,6 @@ html {
 					list-style-position: outside;
 					text-wrap: pretty;
 				}
-			}
-
-			.container__btn.details .btn__project,
-			.container__btn.details .btn__link {
-				color: $white;
-				text-decoration: none;
 			}
 		}
 		.project__display--right {
@@ -417,7 +421,7 @@ html {
 			font-size: 1.55rem;
 			margin-right: 0.75rem;
 		}
-	
+
 		.icon__label {
 			font-size: 1.15rem;
 			font-weight: 700;
@@ -426,12 +430,11 @@ html {
 	}
 }
 
-
 /************* Media Queries *************/
 @media all and (max-width: $breakpoint-xxl) {
 	.nav {
 		.navList__items {
-				a {
+			a {
 				color: $purple_dark;
 			}
 		}

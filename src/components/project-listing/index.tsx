@@ -28,14 +28,19 @@ function Project({ projectData }: ProjectProps) {
 					</section>
 				</section>
 				<section className="project__display--right">
-					<a href={projectData.liveLink.href} target="_blank" rel="noreferrer">
+					<Link
+						className="btn__link"
+						to={`project/${projectData.projectName}`}
+						aria-label={`See ${projectData.projectName} details`}
+						relative="path"
+					>
 						<img
 							className="projectImg animate"
 							src={projectData.projectImg}
 							alt={`${projectData.projectName} App screenshot`}
 							loading="lazy"
 						/>
-					</a>
+					</Link>
 				</section>
 			</article>
 		</section>

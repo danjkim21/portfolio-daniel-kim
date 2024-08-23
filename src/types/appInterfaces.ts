@@ -1,5 +1,5 @@
 export interface navigationInterface {
-	key: number;
-	name: string;
-	href: string;
+  key: number;
+  name: string;
+  href: string;
 }

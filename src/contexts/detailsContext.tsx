@@ -3,39 +3,39 @@ import myDetails from '../assets/data/myDetails';
 import projectDetails from '../assets/data/projectDetails';
 
 export const DetailsContext = createContext<{
-	myDetails: typeof myDetails;
-	projectDetails: typeof projectDetails;
+  myDetails: typeof myDetails;
+  projectDetails: typeof projectDetails;
 } | null>(null);
 
 interface DetailsContextProviderProps {
-	children: ReactNode;
+  children: ReactNode;
 }
 
 export default function DetailsContextProvider({
-	children,
+  children,
 }: DetailsContextProviderProps) {
-	const detailsProviderValue = useMemo(
-		() => ({ myDetails, projectDetails }),
-		[myDetails, projectDetails]
-	);
+  const detailsProviderValue = useMemo(
+    () => ({ myDetails, projectDetails }),
+    [myDetails, projectDetails]
+  );
 
-	return (
-		<DetailsContext.Provider value={detailsProviderValue}>
-			{children}
-		</DetailsContext.Provider>
-	);
+  return (
+    <DetailsContext.Provider value={detailsProviderValue}>
+      {children}
+    </DetailsContext.Provider>
+  );
 }
 
 export function useDetailsContext(): {
-	myDetails: typeof myDetails;
-	projectDetails: typeof projectDetails;
+  myDetails: typeof myDetails;
+  projectDetails: typeof projectDetails;
 } {
-	const context = useContext(DetailsContext);
+  const context = useContext(DetailsContext);
 
-	if (!context) {
-		throw new Error(
-			'useDetailsContext must be used within a DetailsContextProvider'
-		);
-	}
-	return context;
+  if (!context) {
+    throw new Error(
+      'useDetailsContext must be used within a DetailsContextProvider'
+    );
+  }
+  return context;
 }

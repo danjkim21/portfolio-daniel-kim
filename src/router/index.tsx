@@ -11,31 +11,31 @@ import Footer from '../components/footer-section';
 import ProjectDetail from '../components/project-detail-section';
 
 export default function ProjectRoutes() {
-	return (
-		<Router>
-			<ScrollToTop />
-			<BackgroundImg />
-			<Header />
+  return (
+    <Router>
+      <ScrollToTop />
+      <BackgroundImg />
+      <Header />
 
-			<main id="main">
-				<Routes>
-					{/* Landing page sections */}
-					<Route
-						path="*"
-						element={
-							<>
-								<Hero />
-								<About />
-								<Projects />
-							</>
-						}
-					/>
-					{/* Project Detail page */}
-					<Route path="/project/:projectName" element={<ProjectDetail />} />
-				</Routes>
-			</main>
+      <main id="main">
+        <Routes>
+          {/* Landing page sections */}
+          <Route
+            path="*"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Projects />
+              </>
+            }
+          />
+          {/* Project Detail page */}
+          <Route path="/project/:projectName" element={<ProjectDetail />} />
+        </Routes>
+      </main>
 
-			<Footer />
-		</Router>
-	);
+      <Footer />
+    </Router>
+  );
 }

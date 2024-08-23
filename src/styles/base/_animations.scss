@@ -1,18 +1,18 @@
 @media (prefers-reduced-motion: no-preference) {
-	@keyframes fade-in {
-		from {
-			scale: 0.8;
-			opacity: 0;
-		}
-		to {
-			scale: 1;
-			opacity: 1;
-		}
-	}
+  @keyframes fade-in {
+    from {
+      scale: 0.8;
+      opacity: 0;
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
 }
 
 @media (prefers-reduced-motion) {
-	html {
-		scroll-behavior: auto;
-	}
+  html {
+    scroll-behavior: auto;
+  }
 }

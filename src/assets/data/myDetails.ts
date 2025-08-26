@@ -7,8 +7,8 @@ const myDetails: MyDetailsInterface = {
   email: 'dan.jkim21@gmail.com',
   position: 'software engineer',
   location: 'Philadelphia, PA, United States',
-  company: 'Skyward IT Solutions',
-  companyLink: new URL('https://skywarditsolutions.com/'),
+  company: 'Seegrid',
+  companyLink: new URL('https://seegrid.com/'),
   skills: [
     'JavaScript (ES6+)',
     'TypeScript',
